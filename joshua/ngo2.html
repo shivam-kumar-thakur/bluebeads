@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" href="/bluebeads_logo2.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta charset="UTF-8">
@@ -8,13 +10,11 @@
     <title>Regitser NGO</title>
 </head>
 <body>
+    <nav class="navbar">
+        <span><img src="/bluebeads_logo3.png" height="50px"></span>
+        
+    </nav>
     <div class="grid">
-        <div class="profile">
-            <img src="/profile.png">
-            <br>
-            <span id="phno">+91 9930440XXX</span>
-        </div>
-
         <div class="section">
             <form>
                 <h1>NGO DETAILS</h1>
@@ -64,12 +64,12 @@
                 <label for="dob">Date of Birth</label><br>
                 <input required type="date" id="dob" name="dob">
                 <br>
-                <center>
-                    <input required class="button" type="submit">
-                </center>
-            </form>
             </div>
         </div>
+        <center>
+            <input required class="button" type="submit">
+        </center>
+    </form>
     </div>
 </body>
 </html>
@@ -79,33 +79,47 @@
         margin: 0;
         font-family: 'Lucida', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+    body{
+        /* background-color: #007880; */
+    }
     .grid {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 0.3fr 1fr 1fr;
-     }
-     .profile {
-        font-size: 20px;
-        padding: 50px;
-        background-color: #007880;
-        display: flexbox;
+        margin: 5%;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-evenly;
         align-items: center;
-        justify-content: center;
+    }
+    h1 {
         text-align: center;
-     }
-    img {
-        height: 200px;
-     }
+    }
     .section {
-        margin: 50px;
-        /* padding: 100px; */
+        display: flexbox;
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+
+        border: 2px solid #007880;
+        border-radius: 10px;
+        font-size: 15px;
+        
+        background-color: #fff;
+        padding: 1em;
+        width: 30em;
+        height: 30em;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+
+        box-shadow: 0px 0px 10px #0000005c;
+        
     }
     input {
         margin-bottom: 20px;
         padding: 5px;
         border: 1px solid #007880;
         border-radius: 5px;
-        width: 80%;
+        width: 90%;
     }
     .gender {
         display: flex;
@@ -127,12 +141,12 @@
         padding: 5px;
         border: 1px solid #007880;
         border-radius: 5px;
-        width: 80%;
+        width: 90%;
         height: 100px;
     }
     .button {
         padding: 1em;
-        margin-top: 2em;
+        margin-top: 5em;
         width: 18rem;
         background-color: #007880;
         border-style: none;
