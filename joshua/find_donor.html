@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/bluebeads_logo2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Donor</title>
+</head>
+<body>
+    <h1>Find Donor</h1>
+    <div class="grid">
+        <div class="section">
+            <h3>For Me</h3>
+            <a href=""><button class="button" type="button">Find</button></a>
+        </div>
+        <div class="section">
+            <h3>For Others:</h3>
+            <form>
+                <label for="blood">Blood Group</label><br>
+                <select name="blood" id="blood" required>
+                    <option value="" disabled selected> - Select Blood Type - </option>
+                    <option value="A-">A-</option>
+                    <option value="A+">A+</option>
+                    <option value="B-">B-</option>
+                    <option value="B+">B+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="O-">O-</option>
+                    <option value="O+">O+</option>
+                </select>
+                <br>
+                <label for="location">Address</label><br>
+                <textarea required id="location" name="location" placeholder="Enter Your Address"></textarea>
+                <br>
+                <!-- <br><br> -->
+                <!-- <center> -->
+                    <input required class="button" type="submit" id="submit">
+                <!-- </center> -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .section {
+        display: flexbox;
+        align-items: center;
+        text-align: center;
+
+        border: 2px solid #1450A3;
+        border-radius: 30px;
+        font-size: 15px;
+        
+        background-color: #fff;
+        padding: 3em;
+        width: 30em;
+        height: 30em;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+
+        box-shadow: 0px 0px 10px #0000005c;
+        
+    }
+    textarea {
+        margin-bottom: 20px;
+        padding: 5px;
+        border: 1px solid #1450A3;
+        border-radius: 5px;
+        width: 100%;
+        height: 100px;
+    }
+    .button {
+        padding: 1rem;
+        margin-top: auto;
+        width: 20rem;
+        background-color: #1450A3;
+        border-style: none;
+        border-radius: 15px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+</style>
