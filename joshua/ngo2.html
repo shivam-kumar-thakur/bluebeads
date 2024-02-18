@@ -20,55 +20,56 @@
                 <h1>NGO DETAILS</h1>
                 <br>
                 <label for="ngo_name">NGO Name</label><br>
-                <input type="text" id="ngo_name" name="ngo_name">
+                <input required type="text" id="ngo_name" name="ngo_name">
                 <br>
                 <label for="description">Tell us about your NGO</label><br>
-                <textarea id="description" name="description"></textarea>
+                <textarea required id="description" name="description"></textarea>
                 <br>
                 <label for="location">Address</label><br>
-                <textarea id="location" name="location"></textarea>
+                <textarea required id="location" name="location"></textarea>
                 <br>
                 <br>
                 <br>
+            
             </div>
             <div class="section">
                 <h1>NGO HEAD DETAILS</h1>
                 <br>
                 <label for="head_name">NGO Head Full Name</label><br>
-                <input type="text" id="head_name" name="head_name">
+                <input required type="text" id="head_name" name="head_name">
                 <br>
                 <label for="phno">Phone Number</label><br>
-                <input type="tel" id="phno" name="phno">
+                <input required type="tel" id="phno" name="phno">
                 <br>
                 <label for="email">E-Mail Address</label><br>
-                <input type="email" id="email" name="email">
+                <input required type="email" id="email" name="email">
                 <br>
                 <label for="gender">Gender</label>
                 <br>
                 <div class="gender_selection">
                     <div class="gender">
-                        <input required type="radio" id="male" name="gender" value="male">
+                        <input required required type="radio" id="male" name="gender" value="male">
                         <label for="male">Male</label>
                     </div>
                     <div class="gender">
-                        <input required type="radio" id="female" name="gender" value="female">
+                        <input required required type="radio" id="female" name="gender" value="female">
                         <label for="female">Female</label>
                     </div>
                     <div class="gender">
-                        <input required type="radio" id="others" name="gender" value="others">
+                        <input required required type="radio" id="others" name="gender" value="others">
                         <label for="others">Others</label>
                     </div>
                 </div>
                 <br>
                 <label for="dob">Date of Birth</label><br>
-                <input type="date" id="dob" name="dob">
+                <input required type="date" id="dob" name="dob">
                 <br>
+                <center>
+                    <input required class="button" type="submit">
+                </center>
+            </form>
             </div>
         </div>
-        <center>
-            <input class="button" type="submit">
-        </center>
-    </form>
     </div>
 </body>
 </html>
