@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="/bluebeads_logo2.png">
+</head>
+<body>
+    <div class="grid">
+        <div class="form_section">
+            <div class="container" id="container1">
+                <h1>BlueBeads</h1>
+                <form>
+                    <input type="tel" id="phno" placeholder="Enter Your Phone Number" required>
+                    <br><br>
+                    <input type="text" id="password" placeholder="Enter Your Password" required>
+                    
+                    <center>
+                        <br><br>
+                        <a href=""><span>Forgot password?</span></a>  
+                        <br><br>
+                        <button href="">Sign In</button>
+                    </center>
+                </form>
+            </div>
+            <div class="container" id="container2">
+            
+                <span>Don't have an account?</span>
+                <br>
+                <button href="">Sign Up</button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="/bluebeads_logo2.png" height="300px">
+            <br>
+            <span>Logan Placeholder</span>
+        </div>
+       
+    </div>
+    
+</body>
+</html>
+
+<style>
+    * {
+        font-family:'Lucida', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif    
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+
+        margin: auto;
+        width: 50%;
+    }
+    body {
+        background-color: #fff;
+    }
+    .container {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        border: 2px solid #1450A3;
+        border-radius: 30px;
+        font-size: 15px;
+        
+        background-color: #fff;
+        padding: 50px;
+        width: 20em;
+
+        margin-bottom: 10px;
+
+        box-shadow: 0px 0px 10px #0000005c;
+        
+    }
+    #container2 {
+        padding: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* height: 60px; */
+    }
+    input {
+        margin: 5px;
+        border: #1450A3 1px solid;
+        border-radius: 5px;
+        padding: 10px;
+        width: 18rem;
+    }
+    #confirm {
+        width: auto;        
+    }
+    label {
+        font-size: 10px;
+    }
+    button {
+        padding: 15px;
+        margin: 10px;
+        width: 18rem;
+        background-color: #1450A3;
+        border-style: none;
+        border-radius: 15px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+</style>

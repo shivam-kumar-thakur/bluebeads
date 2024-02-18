@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="/bluebeads_logo2.png">
+</head>
+<body>
+    <div class="grid">
+        <div class="image">
+            <img src="/bluebeads_logo2.png" height="300px">
+            <br>
+            <span>Logan Placeholder</span>
+        </div>
+        <div class="container">
+            <h1>BlueBeads</h1>
+            <form>
+                <input type="tel" id="phno" placeholder="Enter Your Phone Number">
+                <br><br>
+                <input type="text" id="password" placeholder="Set Your Password">
+                <br>
+                <input type="text" id="confirm_password" placeholder="Confirm Your Password">
+                <br><br>
+                <label for="blood_type">Your Blood Type: </label>
+                <select name="blood_type" id="blood_type" aria-placeholder="you">
+                    <option value="A+">A+</option>
+                    <option value="A+">A-</option>
+                    <option value="A+">B+</option>
+                    <option value="A+">B-</option>
+                    <option value="A+">AB+</option>
+                    <option value="A+">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                <br>
+                <input type="checkbox" id="confirm" name="confirm" value="I hereby agree" required>
+                <label for="confirm">I Allow to Retreive my Location</label>
+                <br>
+                <br>
+                <label for="confirm">By signing up, you agree to our Terms , Privacy Policy and Cookies Policy .
+
+                </label>
+                <br>
+                <center><button href="">Sign Up</button></center>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+<style>
+    * {
+        font-family:'Lucida', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif    
+    }
+    .grid {
+        display: grid;
+        grid: auto/auto auto;
+        font-size: 15px;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    form {
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        border: 2px solid #1450A3;
+        border-radius: 30px;
+        font-size: 15px;
+        
+        background-color: #fff;
+        padding: 50px;
+        width: 20em;
+        height: 500px;
+
+        margin: auto;
+        margin-top: 25%;
+
+        box-shadow: 0px 0px 10px #0000005c  ;
+        
+    }
+    input {
+        margin: 5px;
+        border: #1450A3 1px solid;
+        border-radius: 5px;
+        padding: 10px;
+        width: 18rem;
+    }
+    #confirm {
+        width: auto;        
+    }
+    label {
+        font-size: 10px;
+    }
+    button {
+        padding: 8px;
+        width: 100px;
+        background-color: #1450A3;
+        border-style: none;
+        border-radius: 10px;
+        color: #fff;
+    }
+</style>
