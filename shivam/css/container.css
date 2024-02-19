@@ -1,0 +1,29 @@
+/* body{
+    background-color: #f6f6fc;
+} */
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid #1450A3;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    /* box-shadow: 0px 1px 7px 0px #0000006b; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.card {
+    width: auto;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-break: break-word;
+}
