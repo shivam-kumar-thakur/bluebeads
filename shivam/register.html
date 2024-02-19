@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="icon" href="/bluebeads_logo2.png">
+    <link rel="icon" href="images/bluebeads_logo2.png">
 </head>
 <body>
     <div class="grid">
-        <div class="image">
-            <img src="images/community-login.jpg" height="400px">
-            <br>
-            <p>"We'll keep you informed when<br> Your dear ones require your attention."</p>
-        </div>
         <div class="container">
-            <h1>BlueBeads</h1>
+            <div class="logo">
+                <img src="images/bluebeads_logo.png" height="50px">
+                BlueBeads
+            </div>
             <form>
-                <input type="tel" id="phno" placeholder="Enter Your Phone Number">
+                <input required type="tel" id="phno" placeholder="Enter Your Phone Number">
                 <br><br>
-                <input type="text" id="password" placeholder="Set Your Password">
+                <input required type="password" id="password" placeholder="Set Your Password">
                 <br>
-                <input type="text" id="confirm_password" placeholder="Confirm Your Password">
+                <input required type="password" id="confirm_password" placeholder="Confirm Your Password">
                 <br><br>
+                <center>
                 <label for="blood_type">Your Blood Type: </label>
-                <select name="blood_type" id="blood_type" aria-placeholder="you">
+                <select required name="blood_type" id="blood_type">
+                    <br>
+                    <option value="" disabled selected> - Select Your Blood Type - </option>
                     <option value="A+">A+</option>
                     <option value="A+">A-</option>
                     <option value="A+">B+</option>
@@ -33,19 +34,23 @@
                     <option value="O+">O+</option>
                     <option value="O-">O-</option>
                 </select>
+                <br><br>
+                <input required type="checkbox" id="confirm" name="confirm" value="I hereby agree" required>
+                <label for="confirm1">I Allow to Retreive my Location</label>
                 <br>
-                <input type="checkbox" id="confirm" name="confirm" value="I hereby agree" required>
-                <label for="confirm">I Allow to Retreive my Location</label>
                 <br>
-                <br>
-                <label for="confirm">By signing up, you agree to our Terms , Privacy Policy and Cookies Policy .
-
-                </label>
+                    <label for="confirm" id="confirm2">By signing up, you agree to our<br>Terms,Privacy Policy and Cookies Policy .
+                     </label>
+                </center>
                 <br>
                 <center><button href="" class="button">Sign Up</button></center>
             </form>
         </div>
-
+        <div class="image">
+            <img src="images/signup.svg" height="600px">
+            <br>
+            <p>"We'll keep you informed when<br> Your dear ones require your attention."</p>
+        </div>
     </div>
     
 </body>
@@ -53,21 +58,33 @@
 
 <style>
     * {
+        margin: 0;
+        padding: 0;
         word-break: break-word;
         font-family:'Lucida', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif    
     }
-    .grid {
-    /* width: 100%; */
+    .logo {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
     align-items: center;
-    margin: 10;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.grid {
+    color: #1450A3;
+    /* font-size: 16px; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-around;
+    /* align-content: space-around; */
 }
     body {
         background-color: #fff;
@@ -78,7 +95,7 @@
     .container {
         justify-content: center;
         align-items: center;
-        text-align: center;
+        /* text-align: center; */
 
         border: 2px solid #1450A3;
         border-radius: 30px;
@@ -107,16 +124,23 @@
         width: 18rem;
     }
     .image p{
-font-family: cursive;
-color: #ff63ef;
-font-size: 30px;
-    }
-    #confirm {
-        width: auto;        
+        font-style: italic;
+        font-family: Poppins;
+        text-align: center;
+        color: #1450A3;
+        font-size: 30px;
+        margin-top: -50px;
     }
     label {
-        font-size: 10px;
+        text-align: left;
+        font-size: 15px;
     }
+    #confirm {
+        width: 15px;
+    }
+    #confirm2 {
+        text-align: center !important;
+    }   
         .button {
     align-items: center;
     appearance: none;

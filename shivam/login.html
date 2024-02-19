@@ -11,13 +11,16 @@
 <body>
     <div class="grid">
         <div class="image">
-            <img src="images/community-login.jpg" height="400px">
-            <br>
-            <p>"We'll keep you informed when<br> Your dear ones require your attention."</p>
+            <img src="images/login.svg" height="600px">
+            <!-- <br> -->
+            <p><i>"We'll keep you informed when<br> your dear ones require your attention."</i></p>
         </div>
         <div class="form_section">
             <div class="container" id="container1">
-                <h1>BlueBeads</h1>
+                <div class="logo">
+                    <img src="images/bluebeads_logo.png" height="50px">
+                    BlueBeads
+                </div>
                 <form>
                     <input type="tel" id="phno" placeholder="Enter Your Phone Number" required>
                     <br><br>
@@ -45,17 +48,29 @@
 
 <style>
     * {
+        /* overflow: hidden; */
+        margin: 0;
+        padding: 0;
         word-break: break-word;
         font-family:'Lucida', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif    
     }
+    .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
     .grid {
     /* width: 100%; */
     display: flex;
-    grid-template-columns: 1fr 1fr;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
     margin: 10;
-    width: 100%;
+    width: 70%;
     height: 100vh;
     flex-direction: row;
     flex-wrap: wrap;
@@ -79,8 +94,8 @@
         background-color: #fff;
         padding: 50px;
         width: 20em;
-
-        margin-bottom: 10px;
+        color: #1450A3;
+        margin-bottom: 30px;
 
         box-shadow: 0px 0px 10px #0000005c;
         
@@ -96,12 +111,14 @@
         border: #1450A3 1px solid;
         border-radius: 5px;
         padding: 10px;
-        width: 18rem;
+        width: 90%;
     }
     .image p{
-font-family: cursive;
-color: #ff63ef;
-font-size: 30px;
+        font-family: Poppins;
+        text-align: center;
+        color: #1450A3;
+        font-size: 30px;
+        margin-top: -50px;
     }
     #confirm {
         width: auto;        
@@ -113,9 +130,10 @@ font-size: 30px;
     align-items: center;
     appearance: none;
     background-color: #ffa600;
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: none;
-    box-shadow:rgb(60 64 67 / 53%) 0 1px 3px 0, rgb(60 64 67 / 0%) 0 4px 8px 3px;    box-sizing: border-box;
+    box-shadow:rgba(60, 64, 67, 0.244) 0 1px 3px 0, rgb(60 64 67 / 0%) 0 4px 8px 3px;    
+    box-sizing: border-box;
     color:black;
     cursor: pointer;
     display: inline-flex;
