@@ -9,6 +9,9 @@ body {
 
 }
 nav {
+    top: 0;
+    position:sticky; 
+    z-index: 1;
     background-color: #1450A3;
     width: 100%;
     display: flex;
@@ -19,7 +22,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: 800;
     color: #fff;
     letter-spacing: 2px;
@@ -37,14 +40,14 @@ ol li {
 ol li a{
     display: block;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1em;
     text-decoration: none;
     transition: 0.2s 0.1s ease;
 }
 ol .slider {
     position: absolute;
-    height: 65px;
-    width: 150px;
+    height: 55.5px;
+    width: 110px;
     left: 10px;
     top:-9px;
     background-color: #fff;
@@ -96,22 +99,22 @@ input {
     color: #940686;
 }
 #tap2:checked ~ nav ol .slider {
-    width: 160px;
-    transform: translateX(165px);
+    width: 120px;
+    transform: translateX(128px);
 }
 #tap3:checked ~ nav ol .slider {
-    width: 140px;
-    transform: translateX(340px);
+    width: 100px;
+    transform: translateX(270px);
 }
 #tap4:checked ~ nav ol .slider {
-    width: 150px;
-    transform: translateX(493px);
+    width: 110px;
+    transform: translateX(393px);
 }
 #tap5:checked ~ nav ol .slider {
-    width: 185px;
-    transform: translateX(660px);
+    width: 125px;
+    transform: translateX(530px);
 }
 #tap6:checked ~ nav ol .slider {
-    width: 200px;
-    transform: translateX(860px);
+    width: 140px;
+    transform: translateX(680px);
 }
