@@ -16,6 +16,13 @@
 
         </div>
         <div class="right">
+            <div class="category">
+                <div class="asset">
+                    <div class="asset-logo">
+                        <i class="fa.fa-inbox"><a>Gold</a></i>
+                    </div>
+                </div>
+            </div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus distinctio corrupti praesentium quaerat est quo amet perferendis nostrum reprehenderit eum, sequi cumque quidem? Sit aut, perferendis impedit pariatur rem quaerat.
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex voluptatibus, quis molestias corporis delectus sunt natus assumenda maiores asperiores voluptatum ad! Eos cupiditate quaerat doloribus molestiae in. Tempora, doloribus.
@@ -56,6 +63,46 @@
         background-color: #f6f6fc;
         overflow-x: hidden;
     }
+    .category {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center'
+    }
+    
+  .asset {
+      /* position: relative; */
+      display: flex;
+      flex-direction: row;
+      margin: 10px 0;
+  }
+  
+  .asset-logo {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex: 0;
+  }
+    
+  .asset-logo:before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      background-color: #602828;
+      transform: rotate(45deg);
+      border-radius: 10px;
+
+  }
+    
+  .asset-logo i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  a {
+    font-size: 10px;
+  }
 
 </style>
 </html>
