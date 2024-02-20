@@ -122,7 +122,14 @@
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 400;
             font-size: 18px;
-            color: blue;
+            color: brown;
+
+        }
+        .head-font-3{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: black;
 
         }
         .btn-or{
@@ -164,6 +171,42 @@
         .tubes-ele > *{
             margin: 10px;
         }
+        .card-3{
+            width: auto;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            word-break: break-word;
+            width: 100%;
+        }
+        .overall-short-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+.overall-short-info > *{
+    margin: 5px;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #40ccbb;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
     </style>
 </head>
 <body>
@@ -223,16 +266,40 @@
                 NGO is like a boat in ocean of Humanity.
             </p>
 
-         
-
 
             <div class="donation">
-                <div class="card request-donation">
-                    <p><span class="head-font-2">Total Camps:</span> 0</p>
-                    <p><span class="head-font-2">Total Volunteers Registered:</span> 0</p>
-                    <p><span class="head-font-2">Total Donors Registered:</span> 0</p>
-                    <p><span class="head-font-2">Total Persons Donated:</span> 0</p>
-                    <p><span class="head-font-2">Blood Groups:</span></p>
+                <div class="overall-short-info">
+                    <div class="circle">
+                        <p><span class="head-font-2">0</span></p>
+                    </div>
+                    <p><span class="head-font-3">Total Camps:</span></p>
+                </div>
+                <div class="overall-short-info">
+                    <div class="circle">
+                        <p><span class="head-font-2">0</span></p>
+                    </div>
+                    <p><span class="head-font-3">Total Volunteers Registered:</span></p>
+                </div>
+                <div class="overall-short-info">
+                    <div class="circle">
+                        <p><span class="head-font-2">0</span></p>
+                    </div>
+                    <p><span class="head-font-3">Total Donors Registered:</span></p>
+                </div>
+                <div class="overall-short-info">
+                    <div class="circle">
+                        <p><span class="head-font-2">0</span></p>
+                    </div>
+                    <p><span class="head-font-3">Total Persons Donated:</span></p>
+                </div>
+
+            </div>
+
+            <p class="hello">New Camp</p>
+            <div class="donation">
+                <div class="card-3">
+                    <p>Start a new Camp. Help humanity </p>
+                    <button class="button-1 btn-or">New</button>
                 </div>
 
             </div>
