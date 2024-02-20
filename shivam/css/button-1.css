@@ -2,17 +2,16 @@
     align-items: center;
     appearance: none;
     background-color: #ffa600;
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: none;
-    box-shadow:rgb(60 64 67 / 53%) 0 1px 3px 0, rgb(60 64 67 / 0%) 0 4px 8px 3px;    box-sizing: border-box;
-    color:black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.167);
     cursor: pointer;
     display: inline-flex;
     fill: currentcolor;
-    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-family: "Poppins",Roboto,Arial,sans-serif;
     font-size: 14px;
     font-weight: 500;
-    height: 35px;
+    height: 40px;
     justify-content: center;
     letter-spacing: .25px;
     line-height: normal;
@@ -26,7 +25,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: auto;
+    width: 60%;
     will-change: transform,opacity;
     z-index: 0;
   }
