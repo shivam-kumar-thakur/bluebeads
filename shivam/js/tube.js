@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
         // <div class="text">${bloodGroup}: ${data[bloodGroup].donated}/${data[bloodGroup].total}</div>
             details.innerHTML=`
             <h3>${bloodGroup}</h3>
-            <p><span>Total Registeration : </span>${data[bloodGroup].total}</p>
-            <p><span>Total Donations : </span>${data[bloodGroup].donated}</p>
+            <p style="font-weight: bold;"><span style="font-weight: bold; color: #940686">TOTAL REGISTRATION : </span>${data[bloodGroup].total}</p>
+            <p style="font-weight: bold;"><span style="font-weight: bold; color: #940686">TOTAL DONATIONS : </span >${data[bloodGroup].donated}</p>
             `
             // Append the details element to the card element
         cardElement.appendChild(details);
@@ -56,6 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to generate random color
     function getRandomColor() {
         // return "#" + Math.floor(Math.random() * 16777215).toString(16);
-        return "#ff63ef"
+        return "#940686"
     }
 });

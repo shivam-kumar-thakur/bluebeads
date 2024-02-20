@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixed and Scrollable Layout</title>
+    <title>NGO Profile</title>
     <!-- External CSS files -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/bluebeads_logo2.png">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/button-2.css">
@@ -19,7 +23,7 @@
             height: 100%;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: Poppins;
             overflow: hidden; /* Prevent body scroll */
             display: flex;
             flex-direction: column;
@@ -54,6 +58,8 @@
             -webkit-scrollbar {
                 display: none;
             }
+            z-index: 1;
+            box-shadow: 0px 0px 10px #0000003e;
         }
 
         /* Right content styling */
@@ -109,24 +115,27 @@
             font-weight: bold;
         }
         .hello{
-            font-family:cursive;
+            text-transform: uppercase;
+            /* font-family:cursive; */
             font-weight: 800;
-            font-size: 24px;
+            font-size: 30px;
+            color: #940686;
         }
         .head-font{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
             font-weight: 500;
             font-size: 22px;
         }
         .head-font-2{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-weight: 400;
+            /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            font-weight: 500;
             font-size: 18px;
-            color: brown;
+            color: #1450a3;
 
         }
         .head-font-3{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* font-family:Cambria, Cochin, Georgia, 
+            Times, 'Times New Roman', serif; */
             font-weight: 400;
             font-size: 18px;
             color: black;
@@ -185,28 +194,35 @@
             width: 100%;
         }
         .overall-short-info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
-}
-.overall-short-info > *{
-    margin: 5px;
-}
-.circle{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid #40ccbb;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
-}
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: space-around;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .overall-short-info > *{
+            margin: 5px;
+        }
+        .circle{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 5px solid #ffa600;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: space-around;
+            justify-content: space-around;
+            align-items: center;
+        }
+        hr {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        img.no_data {
+            height: 30%;
+        }
     </style>
 </head>
 <body>
@@ -241,60 +257,60 @@
         <div class="sidebar">
             <!-- User card -->
             <div class="card-1">
-                <img src="images/shivam.jpg" alt="User Image">
-                <div class="name">John Doe</div>
+                <img src="images/dilip_sir.jpg" alt="User Image">
+                <div class="name">Dilip Kumar DUBEY</div>
             </div>
             <!-- Primary details -->
             <!-- Primary details -->
             <div class="primary-details">
-                <p><span class="head-font-2">NGO Description:</span> trail ngo</li>
-                <p><span class="head-font-2">NGO Head Name:</span> John Doe</li>
+                <p><span class="head-font-2">NGO NAME:</span> PRaYaS Foundation</li>
+                <p><span class="head-font-2">NGO Head Name:</span> Dilip Kumar Dubey</li>
                 <p><span class="head-font-2">NGO Head Contact:</span> +91123456789</li>
-                <p><span class="head-font-2">NGO Head Email:</span> john@example.com</li>
+                <p><span class="head-font-2">NGO Head Email:</span> dilipkumar0673@gmail.com</li>
                 <p><span class="head-font-2">NGO Head Gender:</span> Male</li>
-                <p><span class="head-font-2">Location:</span> New York, United States, 10000</li>
-                <p><span class="head-font-2">Created At:</span> 2024-02-18</li>
-                <p><span class="head-font-2">Updated At:</span> 2024-02-18</li>
+                <p><span class="head-font-2">Location:</span> Renukoot, Uttar Pradesh, INDIA 231217</li>
+                <p><span class="head-font-2">Created At:</span> 13-07-2015</li>
+                <p><span class="head-font-2">Updated At:</span> 21-02-2024</li>
             </div>
         </div>
 
          <!-- Right content -->
          <div class="content">
             <!-- Request donation section -->
-            <p class="hello">Welcome Back</p>
+            <p class="hello">Welcome Back, <span style="color: black;">Dilip Kumar DUBEY</span>!</p>
             <p>
-                NGO is like a boat in ocean of Humanity.
+                <i>NGO is like a boat in ocean of Humanity.</i>
             </p>
 
 
             <div class="donation">
                 <div class="overall-short-info">
                     <div class="circle">
-                        <p><span class="head-font-2">0</span></p>
+                        <p><span class="head-font-2">1</span></p>
                     </div>
                     <p><span class="head-font-3">Total Camps:</span></p>
                 </div>
                 <div class="overall-short-info">
                     <div class="circle">
-                        <p><span class="head-font-2">0</span></p>
+                        <p><span class="head-font-2">53</span></p>
                     </div>
                     <p><span class="head-font-3">Total Volunteers Registered:</span></p>
                 </div>
                 <div class="overall-short-info">
                     <div class="circle">
-                        <p><span class="head-font-2">0</span></p>
+                        <p><span class="head-font-2">531</span></p>
                     </div>
                     <p><span class="head-font-3">Total Donors Registered:</span></p>
                 </div>
                 <div class="overall-short-info">
                     <div class="circle">
-                        <p><span class="head-font-2">0</span></p>
+                        <p><span class="head-font-2">1500+</span></p>
                     </div>
                     <p><span class="head-font-3">Total Persons Donated:</span></p>
                 </div>
 
             </div>
-
+            <hr>
             <p class="hello">New Camp</p>
             <div class="donation">
                 <div class="card-3">
@@ -303,7 +319,7 @@
                 </div>
 
             </div>
-
+            <hr>
             <p class="hello">Overall Collection</p>
             <p>
                 This includes collection from all of your camp.
