@@ -25,9 +25,13 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 60%;
+    width: 100%;
     will-change: transform,opacity;
     z-index: 0;
+    transition: 0.2s ease;
+  }
+  .button-1:hover {
+    background-color: #ff9500;
   }
   .button-1:active {
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
@@ -36,7 +40,7 @@
   
   .button-1:focus {
     outline: none;
-    border: 2px solid #4285f4;
+    border: 2px solid #ff8400;
   }
   
   .button-1:not(:disabled) {
