@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed and Scrollable Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Overall styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent body scroll */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header styling
+        header {
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+        } */
+
+        /* Main container */
+        .container {
+            display: flex;
+            flex: 1;
+            overflow: hidden; /* Prevent content overflow */
+            word-wrap: break-word;
+        }
+
+        /* Left sidebar styling */
+        .sidebar {
+            width: 20%;
+            background-color: white;
+            overflow: auto;
+            overflow-y: auto; /* Enable vertical scrollbar */
+            /* Hide scrollbar for Firefox */
+            scrollbar-width: none;
+            /* Hide scrollbar for WebKit browsers */
+            -webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        /* Right content styling */
+        .content {
+            flex: 1;
+            overflow-y: auto; /* Allow scrolling */
+            padding: 20px;
+            background-color: #f6f6fc;
+        }
+        /* Basic styling for the card */
+        .card {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Styling for the image */
+        .card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 50px; /* Adjust as needed */
+        }
+
+        /* Styling for the name */
+        .card .name {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input class="nav_input" type="radio" id="tap1" name="tap" checked>
+    <input class="nav_input" type="radio" id="tap2" name="tap">
+    <input class="nav_input"  type="radio" id="tap3" name="tap">
+    <input class="nav_input" type="radio" id="tap4" name="tap">
+    <input class="nav_input" type="radio" id="tap5" name="tap">
+    <input class="nav_input" type="radio" id="tap6" name="tap">
+    <nav>
+        <div class="logo">
+            <img src="/bluebeads_logo3.png" height="50px">
+            BlueBeads
+        </div>
+        <ol>
+            <li><label for="tap1"><a><i class="fas fa-user"></i> Profile</a></label></li>
+            <li><label for="tap2"><a><i class="fas fa-droplet"></i> Request</a></label></li>
+            <li><label for="tap3"><a><i class="fas fa-people-roof"></i> NGO</a></label></li>
+            <li><label for="tap4"><a><i class="fas fa-campground"></i> Camp</a></label></li>
+            <li><label for="tap5"><a><i class="fas fa-home"></i> About Us</a></label></li>
+            <li><label for="tap6"><a><i class="fas fa-comments"></i> Feedback</a></label></li>
+            <div class="slider"></div>
+        </ol>
+    </nav>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <div class="card">
+                <img src="images/bluebeads_logo.png" alt="User Image">
+                <div class="name">John Doe</div>
+            </div>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+</body>
+</html>
