@@ -194,3 +194,156 @@
     }
     
 </style>
+
+
+
+{
+    "success": false,
+    "message": "User details are incomplete."
+}
+{
+    "message": "User details retrieved successfully",
+    "data": {
+        "details": {
+            "_id": "65d258797c2a9af0f3e89996",
+            "userName": "John Doe",
+            "bloodGroup": "O+",
+            "gender": "male",
+            "dob": "1990-01-01T00:00:00.000Z",
+            "email": "john@example.com",
+            "location": {
+                "type": "Point",
+                "coordinates": [],
+                "country": "United States",
+                "state": "New York",
+                "postalCode": "10000",
+                "_id": "65d258797c2a9af0f3e89997"
+            },
+            "lastdonation": "2023-12-25T00:00:00.000Z",
+            "donations": [],
+            "volunteerExperience": [],
+            "requests": [],
+            "readyToDonate": [],
+            "createdAt": "2024-02-18T19:20:25.456Z",
+            "updatedAt": "2024-02-18T19:20:25.456Z",
+            "__v": 0
+        }
+    },
+    "statuscode": 200,
+    "success": true
+}
+
+
+
+
+{
+    "success": false,
+    "message": "Fill user details first."
+}
+{
+    "message": "NGO details retrieved successfully",
+    "data": {
+        "details": {
+            "location": {
+                "coordinates": [
+                    40.7128,
+                    -74.006
+                ],
+                "country": "United States",
+                "state": "New York",
+                "postalCode": "10000",
+                "type": "Point"
+            },
+            "_id": "65d252a9f7c01b65cd7043be",
+            "ngo_name": "ngo1",
+            "ngo_description": "trail ngo",
+            "camps": [],
+            "ngoHeadName": "John Doe",
+            "ngoHeadContact": "+91123456789",
+            "ngoHeadEmail": "john@example.com",
+            "ngoHeadGender": "male",
+            "createdAt": "2024-02-18T18:55:37.650Z",
+            "updatedAt": "2024-02-18T18:55:37.650Z",
+            "__v": 0
+        },
+        "overallData": {
+            "totalcamp": 0,
+            "totalVoulntersRegister": 0,
+            "totalDonorsRegister": 0,
+            "totalPersonsDonated": 0,
+            "bloodGroups": {
+                "A+": 0,
+                "A-": 0,
+                "B+": 0,
+                "B-": 0,
+                "AB+": 0,
+                "AB-": 0,
+                "O+": 0,
+                "O-": 0
+            }
+        }
+    },
+    "statuscode": 200,
+    "success": true
+}
+
+
+{
+    "success": true,
+    "message": "Success: Camp details retrieved successfully.",
+    "campDetails": {
+        "_id": "65d2709544488101701d2f93",
+        "campName": "Blood Donation Camp",
+        "ngo": "65d252a9f7c01b65cd7043be",
+        "campDescription": "A blood donation camp organized by XYZ Foundation",
+        "donationStartDate": "2024-03-15T00:00:00.000Z",
+        "donationEndDate": "2024-03-16T00:00:00.000Z",
+        "donationStartTime": 9,
+        "donationsEndTime": 17,
+        "donorsRegister": [],
+        "volunteersRegister": [],
+        "createdAt": "2024-02-18T21:03:17.919Z",
+        "updatedAt": "2024-02-18T21:03:17.919Z",
+        "__v": 0
+    },
+    "overallData": {
+        "totalcamp": 1,
+        "totalVoulntersRegister": 0,
+        "totalDonorsRegister": 0,
+        "totalPersonsDonated": 0,
+        "bloodGroups": {
+            "A+": {
+                "total": 0,
+                "donated": 0
+            },
+            "A-": {
+                "total": 0,
+                "donated": 0
+            },
+            "B+": {
+                "total": 0,
+                "donated": 0
+            },
+            "B-": {
+                "total": 0,
+                "donated": 0
+            },
+            "AB+": {
+                "total": 0,
+                "donated": 0
+            },
+            "AB-": {
+                "total": 0,
+                "donated": 0
+            },
+            "O+": {
+                "total": 0,
+                "donated": 0
+            },
+            "O-": {
+                "total": 0,
+                "donated": 0
+            }
+        }
+    }
+}

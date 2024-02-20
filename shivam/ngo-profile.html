@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed and Scrollable Layout</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/button-2.css">
+    <link rel="stylesheet" href="css/button-1.css">
+    <link rel="stylesheet" href="css/tube.css">
+    <style>
+        /* Overall styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent body scroll */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header styling */
+        /* header {
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+        } */
+
+        /* Main container */
+        .container-1 {
+            display: flex;
+            flex: 1;
+            overflow: hidden; /* Prevent content overflow */
+            word-wrap: break-word;
+        }
+
+        /* Left sidebar styling */
+        .sidebar {
+            width: 20%;
+            background-color: white;
+            overflow: auto;
+            overflow-y: auto; /* Enable vertical scrollbar */
+            /* Hide scrollbar for Firefox */
+            scrollbar-width: none;
+            /* Hide scrollbar for WebKit browsers */
+            -webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        /* Right content styling */
+        .content {
+            flex: 1;
+            overflow-y: auto; /* Allow scrolling */
+            padding: 20px;
+            background-color: #f6f6fc;
+        }
+
+        /* Basic styling for the card */
+        .card-1 {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the image */
+        .card-1 img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 50px; /* Adjust as needed */
+        }
+
+        /* Styling for the name */
+        .card-1 .name {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Primary details styling */
+        .primary-details {
+            border-radius: 5px;
+            padding: 20px;
+            background-color: white;
+            width: 300px;
+            margin: 10px auto;
+        }
+
+        .primary-details p {
+            margin: 10px 5px 0px 5px;
+            font-size: 16px;
+        }
+
+        .info-name {
+            margin: 10px 5px 0px 5px;
+            font-weight: bold;
+        }
+        .hello{
+            font-family:cursive;
+            font-weight: 800;
+            font-size: 24px;
+        }
+        .head-font{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+        }
+        .head-font-2{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: blue;
+
+        }
+        .btn-or{
+            width: 150px;
+        }
+        .btn-pur{
+            width: 150px;
+            height: 40px;
+        }
+        .request-donation {
+            word-break: break-word;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            /* align-items: center; */
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+        .request-donation > * {
+            margin: 5px;
+        }
+        .donation {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        .donation-2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        .tubes-ele > *{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <input class="nav_input" type="radio" id="tap1" name="tap" checked>
+        <input class="nav_input" type="radio" id="tap2" name="tap">
+        <input class="nav_input"  type="radio" id="tap3" name="tap">
+        <input class="nav_input" type="radio" id="tap4" name="tap">
+        <input class="nav_input" type="radio" id="tap5" name="tap">
+        <input class="nav_input" type="radio" id="tap6" name="tap">
+        <nav>
+            <div class="logo">
+                <img src="images/bluebeads_logo3.png" height="50px">
+                BlueBeads
+            </div>
+            <ol>
+                <li><label for="tap1"><a><i class="fas fa-user"></i> Profile</a></label></li>
+                <li><label for="tap2"><a><i class="fas fa-droplet"></i> Request</a></label></li>
+                <li><label for="tap3"><a><i class="fas fa-people-roof"></i> NGO</a></label></li>
+                <li><label for="tap4"><a><i class="fas fa-campground"></i> Camp</a></label></li>
+                <li><label for="tap5"><a><i class="fas fa-home"></i> About Us</a></label></li>
+                <li><label for="tap6"><a><i class="fas fa-comments"></i> Feedback</a></label></li>
+                <div class="slider"></div>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Main container -->
+    <div class="container-1">
+        <!-- Left sidebar -->
+        <div class="sidebar">
+            <!-- User card -->
+            <div class="card-1">
+                <img src="images/shivam.jpg" alt="User Image">
+                <div class="name">John Doe</div>
+            </div>
+            <!-- Primary details -->
+            <!-- Primary details -->
+            <div class="primary-details">
+                <p><span class="head-font-2">NGO Description:</span> trail ngo</li>
+                <p><span class="head-font-2">NGO Head Name:</span> John Doe</li>
+                <p><span class="head-font-2">NGO Head Contact:</span> +91123456789</li>
+                <p><span class="head-font-2">NGO Head Email:</span> john@example.com</li>
+                <p><span class="head-font-2">NGO Head Gender:</span> Male</li>
+                <p><span class="head-font-2">Location:</span> New York, United States, 10000</li>
+                <p><span class="head-font-2">Created At:</span> 2024-02-18</li>
+                <p><span class="head-font-2">Updated At:</span> 2024-02-18</li>
+            </div>
+        </div>
+
+         <!-- Right content -->
+         <div class="content">
+            <!-- Request donation section -->
+            <p class="hello">Welcome Back</p>
+            <p>
+                NGO is like a boat in ocean of Humanity.
+            </p>
+
+         
+
+
+            <div class="donation">
+                <div class="card request-donation">
+                    <p><span class="head-font-2">Total Camps:</span> 0</p>
+                    <p><span class="head-font-2">Total Volunteers Registered:</span> 0</p>
+                    <p><span class="head-font-2">Total Donors Registered:</span> 0</p>
+                    <p><span class="head-font-2">Total Persons Donated:</span> 0</p>
+                    <p><span class="head-font-2">Blood Groups:</span></p>
+                </div>
+
+            </div>
+
+            <p class="hello">Overall Collection</p>
+            <p>
+                This includes collection from all of your camp.
+            </p>
+
+            <div class="">
+                <div class="tubes-container tubes-ele" id="tubes-1">
+                    <!-- Tubes will be dynamically generated here -->
+                </div>
+            </div>
+            <script type="text/javascript" src="js/tube.js"></script>
+
+
+
+
+            <!-- <ul>
+                <li>A+: 0</li>
+                <li>A-: 0</li>
+                <li>B+: 0</li>
+                <li>B-: 0</li>
+                <li>AB+: 0</li>
+                <li>AB-: 0</li>
+                <li>O+: 0</li>
+                <li>O-: 0</li>
+            </ul> -->
+
+</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fixed and Scrollable Layout</title>
+    <!-- External CSS files -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/button-2.css">
+    <link rel="stylesheet" href="css/button-1.css">
     <style>
         /* Overall styling */
         body, html {
@@ -19,8 +23,8 @@
             flex-direction: column;
         }
 
-        /* Header styling
-        header {
+        /* Header styling */
+        /* header {
             height: 50px;
             background-color: #333;
             color: #fff;
@@ -29,7 +33,7 @@
         } */
 
         /* Main container */
-        .container {
+        .container-1 {
             display: flex;
             flex: 1;
             overflow: hidden; /* Prevent content overflow */
@@ -57,20 +61,20 @@
             padding: 20px;
             background-color: #f6f6fc;
         }
+
         /* Basic styling for the card */
-        .card {
+        .card-1 {
             width: 300px;
-            height: 400px;
-            border: 1px solid #ccc;
+            height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             overflow: hidden;
             position: relative;
+            margin-bottom: 20px;
         }
 
         /* Styling for the image */
-        .card img {
+        .card-1 img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
@@ -78,45 +82,215 @@
         }
 
         /* Styling for the name */
-        .card .name {
+        .card-1 .name {
             margin-top: 20px;
             font-size: 24px;
             font-weight: bold;
+        }
+
+        /* Primary details styling */
+        .primary-details {
+            border-radius: 5px;
+            padding: 20px;
+            background-color: white;
+            width: 300px;
+            margin: 10px auto;
+        }
+
+        .primary-details p {
+            margin: 10px 5px 0px 5px;
+            font-size: 16px;
+        }
+
+        .info-name {
+            margin: 10px 5px 0px 5px;
+            font-weight: bold;
+        }
+        .hello{
+            font-family:cursive;
+            font-weight: 800;
+            font-size: 24px;
+        }
+        .head-font{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+        }
+        .head-font-2{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: blue;
+
+        }
+        .btn-or{
+            width: 150px;
+        }
+        .btn-pur{
+            width: 150px;
+            height: 40px;
+        }
+        .request-donation {
+            word-break: break-word;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            /* align-items: center; */
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+        .request-donation > * {
+            margin: 5px;
+        }
+        .donation {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        .donation-2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <header>
+        <!-- Navigation bar -->
         <input class="nav_input" type="radio" id="tap1" name="tap" checked>
-    <input class="nav_input" type="radio" id="tap2" name="tap">
-    <input class="nav_input"  type="radio" id="tap3" name="tap">
-    <input class="nav_input" type="radio" id="tap4" name="tap">
-    <input class="nav_input" type="radio" id="tap5" name="tap">
-    <input class="nav_input" type="radio" id="tap6" name="tap">
-    <nav>
-        <div class="logo">
-            <img src="/bluebeads_logo3.png" height="50px">
-            BlueBeads
-        </div>
-        <ol>
-            <li><label for="tap1"><a><i class="fas fa-user"></i> Profile</a></label></li>
-            <li><label for="tap2"><a><i class="fas fa-droplet"></i> Request</a></label></li>
-            <li><label for="tap3"><a><i class="fas fa-people-roof"></i> NGO</a></label></li>
-            <li><label for="tap4"><a><i class="fas fa-campground"></i> Camp</a></label></li>
-            <li><label for="tap5"><a><i class="fas fa-home"></i> About Us</a></label></li>
-            <li><label for="tap6"><a><i class="fas fa-comments"></i> Feedback</a></label></li>
-            <div class="slider"></div>
-        </ol>
-    </nav>
+        <input class="nav_input" type="radio" id="tap2" name="tap">
+        <input class="nav_input"  type="radio" id="tap3" name="tap">
+        <input class="nav_input" type="radio" id="tap4" name="tap">
+        <input class="nav_input" type="radio" id="tap5" name="tap">
+        <input class="nav_input" type="radio" id="tap6" name="tap">
+        <nav>
+            <div class="logo">
+                <img src="images/bluebeads_logo3.png" height="50px">
+                BlueBeads
+            </div>
+            <ol>
+                <li><label for="tap1"><a><i class="fas fa-user"></i> Profile</a></label></li>
+                <li><label for="tap2"><a><i class="fas fa-droplet"></i> Request</a></label></li>
+                <li><label for="tap3"><a><i class="fas fa-people-roof"></i> NGO</a></label></li>
+                <li><label for="tap4"><a><i class="fas fa-campground"></i> Camp</a></label></li>
+                <li><label for="tap5"><a><i class="fas fa-home"></i> About Us</a></label></li>
+                <li><label for="tap6"><a><i class="fas fa-comments"></i> Feedback</a></label></li>
+                <div class="slider"></div>
+            </ol>
+        </nav>
     </header>
-    <div class="container">
+
+    <!-- Main container -->
+    <div class="container-1">
+        <!-- Left sidebar -->
         <div class="sidebar">
-            <div class="card">
-                <img src="images/bluebeads_logo.png" alt="User Image">
+            <!-- User card -->
+            <div class="card-1">
+                <img src="images/shivam.jpg" alt="User Image">
                 <div class="name">John Doe</div>
             </div>
+            <!-- Primary details -->
+            <div class="primary-details">
+                <!-- User Details -->
+                <!-- <p>User Details</p> -->
+                    <p><span class="head-font-2">Blood Group:</span> O+</p>
+                    <p><span class="head-font-2">Gender:</span> Male</p>
+                    <p><span class="head-font-2">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-2">Email:</span> john@example.com</p>
+                    <p><span class="head-font-2">Location:</span> New York, United States, 10000</p>
+                    <p><span class="head-font-2">Last Donation:</span> 2023-12-25</p>
+            </div>
         </div>
+
+        <!-- Right content -->
         <div class="content">
+            <!-- Request donation section -->
+            <p class="hello">Hello</p>
+            <p>
+                Each one of us form a ocean of hope.
+            </p>
+            <div class="donation">
+                <div class="card request-donation">
+                    <p class="head-font">Find Donor</p>
+                    <p>We are ready to help You. Find Donor with A.I. help !</p>
+                    <button class="button-2 btn-pur">New</button>
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">Current Request</p>
+                    <!-- <p>No requests.</p> -->
+                    <!-- Request Details -->
+
+                         <p><span class="head-font-2">Blood Group Needed:</span> A-</p>
+                         <p><span class="head-font-2">Location:</span> New York, United States, 10000</p>
+                         <p><span class="head-font-2">Request Status:</span> Open</p>
+                     
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">Previous History:</p>
+                    <p>Just a click to see your previous history of requests.</p>
+                    <button class="button-1 btn-or">See Now</button>
+                </div>
+
+            </div>
+
+            <p class="hello">Public Welfare</p>
+            <div class="donation">
+                <div class="card request-donation">
+                    <p class="head-font">Donations Done</p>
+                    <p>No info</p>
+                    <button class="button-1 btn-or">Find Camp</button>
+                </div>
+                <div class="card request-donation">
+                    <p class="head-font">Volunteer Experience</p>
+                    <p>No info</p>
+                    <button class="button-1 btn-or">Find Camp</button>
+                </div>
+
+            </div>
+
+            <p class="hello">Blood Banks in User's State</p>
+            <div class="donation">
+                <div class="card request-donation">
+                    <!-- Blood Banks in User's State -->
+                    <p><span class="head-font-2">Name:</span> Example Blood Bank</p>
+                    <p><span class="head-font-2">Location:</span> New York, United States, 12345</p>
+                    <p><span class="head-font-2">Contact:</span> 1234567890</p>
+                </div>
+                <div class="card request-donation">
+                    <!-- Blood Banks in User's State -->
+                    <p><span class="head-font-2">Name:</span> Example Blood Bank</p>
+                    <p><span class="head-font-2">Location:</span> New York, United States, 12345</p>
+                    <p><span class="head-font-2">Contact:</span> 1234567890</p>
+                </div>
+                <div class="card request-donation">
+                    <!-- Blood Banks in User's State -->
+                    <p><span class="head-font-2">Name:</span> Example Blood Bank</p>
+                    <p><span class="head-font-2">Location:</span> New York, United States, 12345</p>
+                    <p><span class="head-font-2">Contact:</span> 1234567890</p>
+                </div>
+            </div>
+
+            <p class="hello">Camps in your area</p>
+            <div class="donation-2">
+                <div class="card request-donation">
+                    <!-- camps in user area -->
+                    <p>
+                        <span class="head-font-2">Camp Name:</span> Example Camp<br>
+                        <span class="head-font-2">NGO:</span> NGO Name<br>
+                        <span class="head-font-2">Description:</span> Description of the camp<br>
+                        <span class="head-font-2">Location:</span> New York, United States, 10000<br>
+                    </p>
+                </div>
+            </div>
 
         </div>
     </div>

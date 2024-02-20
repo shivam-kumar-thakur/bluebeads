@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed and Scrollable Layout</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/button-2.css">
+    <link rel="stylesheet" href="css/button-1.css">
+    <style>
+        /* Overall styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent body scroll */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header styling */
+        /* header {
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+        } */
+
+        /* Main container */
+        .container-1 {
+            display: flex;
+            flex: 1;
+            overflow: hidden; /* Prevent content overflow */
+            word-wrap: break-word;
+        }
+
+        /* Left sidebar styling */
+        .sidebar {
+            width: 20%;
+            background-color: white;
+            overflow: auto;
+            overflow-y: auto; /* Enable vertical scrollbar */
+            /* Hide scrollbar for Firefox */
+            scrollbar-width: none;
+            /* Hide scrollbar for WebKit browsers */
+            -webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        /* Right content styling */
+        .content {
+            flex: 1;
+            overflow-y: auto; /* Allow scrolling */
+            padding: 20px;
+            background-color: #f6f6fc;
+        }
+
+        /* Basic styling for the card */
+        .card-1 {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the image */
+        .card-1 img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 50px; /* Adjust as needed */
+        }
+
+        /* Styling for the name */
+        .card-1 .name {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Primary details styling */
+        .primary-details {
+            border-radius: 5px;
+            padding: 20px;
+            background-color: white;
+            width: 300px;
+            margin: 10px auto;
+        }
+
+        .primary-details p {
+            margin: 10px 5px 0px 5px;
+            font-size: 16px;
+        }
+
+        .info-name {
+            margin: 10px 5px 0px 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <input class="nav_input" type="radio" id="tap1" name="tap" checked>
+        <input class="nav_input" type="radio" id="tap2" name="tap">
+        <input class="nav_input"  type="radio" id="tap3" name="tap">
+        <input class="nav_input" type="radio" id="tap4" name="tap">
+        <input class="nav_input" type="radio" id="tap5" name="tap">
+        <input class="nav_input" type="radio" id="tap6" name="tap">
+        <nav>
+            <div class="logo">
+                <img src="images/bluebeads_logo3.png" height="50px">
+                BlueBeads
+            </div>
+            <ol>
+                <li><label for="tap1"><a><i class="fas fa-user"></i> Profile</a></label></li>
+                <li><label for="tap2"><a><i class="fas fa-droplet"></i> Request</a></label></li>
+                <li><label for="tap3"><a><i class="fas fa-people-roof"></i> NGO</a></label></li>
+                <li><label for="tap4"><a><i class="fas fa-campground"></i> Camp</a></label></li>
+                <li><label for="tap5"><a><i class="fas fa-home"></i> About Us</a></label></li>
+                <li><label for="tap6"><a><i class="fas fa-comments"></i> Feedback</a></label></li>
+                <div class="slider"></div>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Main container -->
+    <div class="container-1">
+        <!-- Left sidebar -->
+        <div class="sidebar">
+            <!-- User card -->
+            <div class="card-1">
+                <img src="images/bluebeads_logo.png" alt="User Image">
+                <div class="name">John Doe</div>
+            </div>
+            <!-- Primary details -->
+            <div class="primary-details">
+                <!-- Camp Details -->
+                <h2>Camp Details</h2>
+                <ul>
+                    <li><strong>Camp Name:</strong> Blood Donation Camp</li>
+                    <li><strong>Camp Description:</strong> A blood donation camp organized by XYZ Foundation</li>
+                    <li><strong>Donation Period:</strong> From 2024-03-15 to 2024-03-16</li>
+                    <li><strong>Donation Time:</strong> From 9:00 to 17:00</li>
+                </ul>
+                    </div>
+                </div>
+
+        <!-- Right content -->
+        <div class="content">
+            <!-- Request donation section -->
+            <div class="card request-donation">
+                <h1>Camp, User, and Blood Count Information</h1>
+
+                <!-- Overall Data -->
+                <h2>Overall Data</h2>
+                <ul>
+                    <li><strong>Total Camps:</strong> 1</li>
+                    <li><strong>Total Volunteers Registered:</strong> 0</li>
+                    <li><strong>Total Donors Registered:</strong> 0</li>
+                    <li><strong>Total Persons Donated:</strong> 0</li>
+                </ul>
+            
+                <!-- Registered Users -->
+                <h2>Registered Users</h2>
+                <ul>
+                    <li><strong>User ID:</strong> 65d258797c2a9af0f3e89996</li>
+                    <li><strong>User Name:</strong> John Doe</li>
+                    <li><strong>Blood Group:</strong> O+</li>
+                    <li><strong>Gender:</strong> Male</li>
+                    <li><strong>Date of Birth:</strong> 1990-01-01</li>
+                    <li><strong>Contact Number:</strong> 123</li>
+                </ul>
+            
+                <!-- Donated Users -->
+                <h2>Donated Users</h2>
+                <ul>
+                    <li>Same as registered users</li>
+                </ul>
+            
+                <!-- Volunteers Waiting for Approval -->
+                <h2>Volunteers Waiting for Approval</h2>
+                <ul>
+                    <li><strong>User ID:</strong> 65d258797c2a9af0f3e89996</li>
+                    <li><strong>User Name:</strong> John Doe</li>
+                    <li><strong>Blood Group:</strong> O+</li>
+                    <li><strong>Gender:</strong> Male</li>
+                    <li><strong>Date of Birth:</strong> 1990-01-01</li>
+                    <li><strong>Signup:</strong> 65d24bb285ec6ba0c68a48fa</li>
+                </ul>
+            
+                <!-- Volunteers Approved for the Camp -->
+                <h2>Volunteers Approved for the Camp</h2>
+                <p>No volunteers approved yet.</p>
+            
+                <!-- Blood Count Information -->
+                <h2>Blood Count Information</h2>
+                <ul>
+                    <li><strong>A+:</strong> Total: 0, Donated: 0</li>
+                    <li><strong>A-:</strong> Total: 0, Donated: 0</li>
+                    <li><strong>B+:</strong> Total: 0, Donated: 0</li>
+                    <li><strong>B-:</strong> Total: 0, Donated: 0</li>
+                    <li><strong>AB+:</strong> Total: 0, Donated: 0</li>
+                    <li><strong>AB-:</strong> Total: 0, Donated: 0</li>
+                    <li><strong>O+:</strong> Total: 0, Donated: 0</li>
+                    <li><strong>O-:</strong> Total: 0, Donated: 0</li>
+                </ul>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
