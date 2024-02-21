@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixed and Scrollable Layout</title>
+    <title>Camp Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- External CSS files -->
+    <link rel="icon" href="images/bluebeads_logo2.png">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/button-2.css">
@@ -22,7 +27,8 @@
             height: 100%;
         }
         body {
-            font-family: Arial, sans-serif;
+            /* font-family: Arial, sans-serif; */
+            font-family: 'Poppins';
             overflow: hidden; /* Prevent body scroll */
             display: flex;
             flex-direction: column;
@@ -112,24 +118,28 @@
             font-weight: bold;
         }
         .hello{
-            font-family:cursive;
-            font-weight: 800;
+            font-family: 'Poppins';
+            font-weight: 600;
             font-size: 24px;
+            text-transform: capitalize;
         }
         .head-font{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+            font-family: 'Poppins';
             font-weight: 500;
             font-size: 22px;
         }
         .head-font-2{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            font-family: 'Poppins';
             font-weight: 400;
             font-size: 18px;
             color: brown;
 
         }
         .head-font-3{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            font-family: 'Poppins';
             font-weight: 400;
             font-size: 18px;
             color: black;
@@ -209,10 +219,10 @@
     margin: 5px;
 }
 .circle{
-    width: 250px;
+    width: 100px;
     height: 100px;
     border-radius: 35%;
-    border: 3px solid #40ccbb;
+    border: 5px solid #ffa600;;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -222,10 +232,12 @@
     font-size: medium;
 }
 .select-user-type-1{
+    color: #ffffff;
     width: 150px;
     height: 50px;
-    border: 2px solid #E80FD3;
-    background-image: linear-gradient(45deg, #B7FFF6, #E9FF9E);
+    border: 2px solid #940686;
+    /* background-image: linear-gradient(45deg, #B7FFF6, #E9FF9E); */
+    background-color: #940686;
     display: flex;
     align-content: space-around;
     justify-content: center;
@@ -238,7 +250,7 @@
 .select-user-type-2{
     width: 150px;
     height: 50px;
-    border: 2px solid #E80FD3;
+    border: 2px solid #940686;
     display: flex;
     align-content: space-around;
     justify-content: center;
@@ -256,16 +268,18 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin:15px 5px 15px 5px;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Poppins';
     font-weight: 600;
 }
 .btn-whi-select{
-    background-color: white;
+    background-color: #ffc14f;
     width: 100px;
     height: 50px;
-    font-size: larger;
+    font-size: 14px;
     color:black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Poppins';
 }
 .btn-ora-select{
     width: 50px;
@@ -279,7 +293,9 @@
     border-radius: 50%;
     font-size: larger;
     color:black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif;
+      */
+    font-family: 'Poppins';
 }
 .btn-whi-select-mark{
     width: 50px;
@@ -288,7 +304,8 @@
     background-color: white;
     font-size: larger;
     color:black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Poppins';
 }
 .select-btn-card {
     display: flex;
@@ -399,7 +416,7 @@
         <!-- Right content -->
         <div class="content">
             <!-- Request donation section -->
-            <p class="hello">Welcome Admin</p>
+            <p class="hello">Welcome, Admin!</p>
             <p>
                 Seamlessly see and manage the users data.
             </p>
@@ -409,23 +426,23 @@
                     <div class="circle">
                         <p><span class="head-font-2">0</span></p>
                     </div>
-                    <p><span class="head-font-3">Total Volunteers Registered:</span></p>
+                    <p><span class="head-font-3">Total Volunteers Registered</span></p>
                 </div>
                 <div class="overall-short-info">
                     <div class="circle">
                         <p><span class="head-font-2">0</span></p>
                     </div>
-                    <p><span class="head-font-3">Total Donors Registered:</span></p>
+                    <p><span class="head-font-3">Total Donors Registered</span></p>
                 </div>
                 <div class="overall-short-info">
                     <div class="circle">
                         <p><span class="head-font-2">0</span></p>
                     </div>
-                    <p><span class="head-font-3">Total Persons Donated:</span></p>
+                    <p><span class="head-font-3">Total People Donated</span></p>
                 </div>
 
             </div>
-
+            <hr>
             <p class="hello">Donors</p>
             <div class="select-div">
                 <div class="select-user-type-1" id="registered-users-id">Registered</div>
@@ -513,8 +530,7 @@
                     </div>
                 </div>
             </div>
-
-
+            <hr>
             <p class="hello">Volunteers</p>
             <div class="select-div">
                 <div class="select-user-type-1" id="approved-volunters-id">Approved</div>
@@ -607,8 +623,8 @@
                 </div>
 
             </div>
-
-            <p class="hello">Overall Donations Upto Now :</p>
+            <hr>
+            <p class="hello">Overall Donations Upto Now</p>
 
             <div class="">
                 <div class="tubes-container tubes-ele" id="tubes-1">
