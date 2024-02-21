@@ -3,208 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Login</title>
     <link rel="icon" href="images/bluebeads_logo2.png">
+    <link rel="stylesheet" href="css/button-1.css">
+    <link rel="stylesheet" href="css/login-page.css">
+    <style>
+        .image-reg{
+            width: 70%;
+        }
+        .images-conatiner{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 500;
+            color: brown;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="grid">
-        <div class="container">
-            <div class="logo">
-                <img src="images/bluebeads_logo.png" height="50px">
-                BlueBeads
-            </div>
-            <form>
-                <input required type="tel" id="phno" placeholder="Enter Your Phone Number">
-                <br><br>
-                <input required type="password" id="password" placeholder="Set Your Password">
-                <br>
-                <input required type="password" id="confirm_password" placeholder="Confirm Your Password">
-                <br><br>
-                <center>
-                <label for="blood_type">Your Blood Type: </label>
-                <select required name="blood_type" id="blood_type">
-                    <br>
-                    <option value="" disabled selected> - Select Your Blood Type - </option>
-                    <option value="A+">A+</option>
-                    <option value="A+">A-</option>
-                    <option value="A+">B+</option>
-                    <option value="A+">B-</option>
-                    <option value="A+">AB+</option>
-                    <option value="A+">AB-</option>
-                    <option value="O+">O+</option>
-                    <option value="O-">O-</option>
-                </select>
-                <br><br>
-                <input required type="checkbox" id="confirm" name="confirm" value="I hereby agree" required>
-                <label for="confirm1">I Allow to Retreive my Location</label>
-                <br>
-                <br>
-                    <label for="confirm" id="confirm2">By signing up, you agree to our<br>Terms,Privacy Policy and Cookies Policy .
-                     </label>
-                </center>
-                <br>
-                <center><button href="" class="button">Sign Up</button></center>
-            </form>
+
+    <div class="main-container">
+        <div class="images-conatiner">
+            <img src="images/join-us.jpg" class="image-reg">
+            <p style="font-size: 34px;"><i>"1 Donation = 4 Lives"</i></p>
         </div>
-        <div class="image">
-            <img src="images/signup.svg" height="600px">
-            <br>
-            <p>"We'll keep you informed when<br> Your dear ones require your attention."</p>
+        <div class="form_section">
+            <div class="container" id="container1">
+                <div class="logo">
+                    <img src="images/bluebeads_logo.png" height="50px">
+                    BlueBeads
+                </div>
+                <form>
+                    <input required type="tel" id="phno" placeholder="Enter Your Phone Number">
+                    <br><br>
+                    <input required type="password" id="password" placeholder="Set Your Password">
+                    <br>
+                    <input required type="password" id="confirm_password" placeholder="Confirm Your Password">
+                    <br><br>
+                    <center>
+                    <label for="blood_type">Your Blood Type: </label>
+                    <select required name="blood_type" id="blood_type">
+                        <br>
+                        <option value="" disabled selected> - Select Your Blood Type - </option>
+                        <option value="A+">A+</option>
+                        <option value="A+">A-</option>
+                        <option value="A+">B+</option>
+                        <option value="A+">B-</option>
+                        <option value="A+">AB+</option>
+                        <option value="A+">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                    <br><br>
+                    <input required type="checkbox" id="confirm" name="confirm" value="I hereby agree" required>
+                    <label for="confirm1">I Allow to Retreive my Location</label>
+                    <br>
+                    <br>
+                        <label for="confirm" id="confirm2">By signing up, you agree to our<br>Terms,Privacy Policy and Cookies Policy .
+                         </label>
+                    </center>
+                    <br>
+                    <center><button href="" class="button">Sign Up</button></center>
+                </form>
+            </div>
+            <div class="container" id="container2">
+            
+                <span>Already ave an account?</span>
+                <br>
+                <a href="/register.html"><button class="button" type="button">Sign In</button></a>
+            </div>
         </div>
     </div>
     
 </body>
 </html>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        word-break: break-word;
-        font-family:'Lucida', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif    
-    }
-    .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-}
-
-.grid {
-    color: #1450A3;
-    /* font-size: 16px; */
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* align-content: space-around; */
-}
-    body {
-        background-color: #fff;
-    }
-    a{
-        text-decoration: none;
-    }
-    .container {
-        justify-content: center;
-        align-items: center;
-        /* text-align: center; */
-
-        border: 2px solid #1450A3;
-        border-radius: 30px;
-        font-size: 15px;
-        
-        background-color: #fff;
-        padding: 50px;
-        width: 20em;
-
-        margin-bottom: 10px;
-
-        box-shadow: 0px 0px 10px #0000005c;
-        
-    }
-    #container2 {
-        padding: 50px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        /* height: 60px; */
-    }
-    input {
-        margin: 5px;
-        border: #1450A3 1px solid;
-        border-radius: 5px;
-        padding: 10px;
-        width: 18rem;
-    }
-    .image p{
-        font-style: italic;
-        font-family: Poppins;
-        text-align: center;
-        color: #940686;
-        font-size: 30px;
-        margin-top: -50px;
-    }
-    label {
-        text-align: left;
-        font-size: 15px;
-    }
-    #confirm {
-        width: 15px;
-    }
-    #confirm2 {
-        text-align: center !important;
-    }   
-        .button {
-    align-items: center;
-    appearance: none;
-    background-color: #ffa600;
-    border-radius: 20px;
-    border-style: none;
-    box-shadow:rgb(60 64 67 / 53%) 0 1px 3px 0, rgb(60 64 67 / 0%) 0 4px 8px 3px;    box-sizing: border-box;
-    color:black;
-    cursor: pointer;
-    display: inline-flex;
-    fill: currentcolor;
-    font-family: "Google Sans",Roboto,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    height: 35px;
-    justify-content: center;
-    letter-spacing: .25px;
-    line-height: normal;
-    max-width: 100%;
-    overflow: visible;
-    padding: 2px 24px;
-    position: relative;
-    text-align: center;
-    text-transform: none;
-    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: auto;
-    will-change: transform,opacity;
-    z-index: 0;
-    padding: 15px;
-        margin: 10px;
-        width: 18rem;
-  }
-  .button-1:active {
-    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
-    outline: none;
-  }
-  
-  .button-1:focus {
-    outline: none;
-    border: 2px solid #4285f4;
-  }
-  
-  .button-1:not(:disabled) {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-  }
-  
-  .button-1:not(:disabled):hover {
-    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
-  }
-  
-  .button-1:not(:disabled):focus {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-  }
-  
-  .button-1:not(:disabled):active {
-    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
-  }
-  
-  .button-1:disabled {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-  }
-    }
-    
-</style>
