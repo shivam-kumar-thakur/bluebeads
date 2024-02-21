@@ -161,6 +161,16 @@
             margin: 10px;
             padding: 10px;
         }
+        .donation-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
         .donation-2{
             display: flex;
             flex-direction: row;
@@ -248,10 +258,11 @@
 }
 .btn-whi-select{
     background-color: white;
-    width: 50px;
+    width: 100px;
     height: 50px;
-    border-radius: 50%;
     font-size: larger;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .btn-ora-select{
     width: 50px;
@@ -259,15 +270,53 @@
     border-radius: 50%;
     font-size: larger;
 }
+.btn-ora-select-mark{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: larger;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn-whi-select-mark{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: larger;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .select-btn-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: flex-end;
+    align-content: center;
     width: 100%;
     margin: 20px 0px 0px 0px;
+}
+.select-btn-card-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+}
+.request-donation {
+    word-break: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /* text-align: -webkit-auto; */
+    align-items: flex-start;
+    margin: 10px;
 }
     </style>
 </head>
@@ -353,80 +402,191 @@
                 <div class="select-user-type-2" id="">Donated</div>
             </div>
 
-            <div class="donation">
+            <div class="donation-left" id="registered-users">
                 <div class="card request-donation">
-                    <p class="head-font">Find Donor</p>
-                    <p>We are ready to help You. Find Donor with A.I. help !</p>
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
                     <div class="select-btn-card">
-                        <button class="button-1 btn-ora-select">+</button>
-                    <button class="button-2 btn-whi-select">-</button>
+                        <button class="button-1 btn-whi-select">Done</button>
                     </div>
                 </div>
 
                 <div class="card request-donation">
-                    <p class="head-font">Current Request</p>
-                    <!-- <p>No requests.</p> -->
-                    <!-- Request Details -->
-
-                         <p><span class="head-font-2">Blood Group Needed:</span> A-</p>
-                         <p><span class="head-font-2">Location:</span> New York, United States, 10000</p>
-                         <p><span class="head-font-2">Request Status:</span> Open</p>
-                     
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select">Done</button>
+                    </div>
                 </div>
 
                 <div class="card request-donation">
-                    <p class="head-font">Previous History:</p>
-                    <p>Just a click to see your previous history of requests.</p>
-                    <button class="button-1 btn-or">See Now</button>
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select">Done</button>
+                    </div>
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select">Done</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="donation-left" id="donated-users">
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select">Not Done</button>
+                    </div>
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select">Not Done</button>
+                    </div>
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select">Not Done</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <p class="hello">Volunteers</p>
+            <div class="select-div">
+                <div class="select-user-type-1" id="">Approved</div>
+                <div class="select-user-type-2" id="">Waiting</div>
+            </div>
+
+            <div class="donation-left" id="approved-volunters">
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select-mark">-</button>
+                    </div>
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select-mark">-</button>
+                    </div>
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select-mark">-</button>
+                    </div>
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card">
+                        <button class="button-1 btn-whi-select-mark">-</button>
+                    </div>
                 </div>
 
             </div>
 
-                <!-- Registered Users -->
-                <h2>Registered Users</h2>
-                <ul>
-                    <li><strong>User ID:</strong> 65d258797c2a9af0f3e89996</li>
-                    <li><strong>User Name:</strong> John Doe</li>
-                    <li><strong>Blood Group:</strong> O+</li>
-                    <li><strong>Gender:</strong> Male</li>
-                    <li><strong>Date of Birth:</strong> 1990-01-01</li>
-                    <li><strong>Contact Number:</strong> 123</li>
-                </ul>
-            
-                <!-- Donated Users -->
-                <h2>Donated Users</h2>
-                <ul>
-                    <li>Same as registered users</li>
-                </ul>
-            
-                <!-- Volunteers Waiting for Approval -->
-                <h2>Volunteers Waiting for Approval</h2>
-                <ul>
-                    <li><strong>User ID:</strong> 65d258797c2a9af0f3e89996</li>
-                    <li><strong>User Name:</strong> John Doe</li>
-                    <li><strong>Blood Group:</strong> O+</li>
-                    <li><strong>Gender:</strong> Male</li>
-                    <li><strong>Date of Birth:</strong> 1990-01-01</li>
-                    <li><strong>Signup:</strong> 65d24bb285ec6ba0c68a48fa</li>
-                </ul>
-            
-                <!-- Volunteers Approved for the Camp -->
-                <h2>Volunteers Approved for the Camp</h2>
-                <p>No volunteers approved yet.</p>
-            
-                <!-- Blood Count Information -->
-                <h2>Blood Count Information</h2>
-                <ul>
-                    <li><strong>A+:</strong> Total: 0, Donated: 0</li>
-                    <li><strong>A-:</strong> Total: 0, Donated: 0</li>
-                    <li><strong>B+:</strong> Total: 0, Donated: 0</li>
-                    <li><strong>B-:</strong> Total: 0, Donated: 0</li>
-                    <li><strong>AB+:</strong> Total: 0, Donated: 0</li>
-                    <li><strong>AB-:</strong> Total: 0, Donated: 0</li>
-                    <li><strong>O+:</strong> Total: 0, Donated: 0</li>
-                    <li><strong>O-:</strong> Total: 0, Donated: 0</li>
-                </ul>
-            
+
+            <div class="donation-left" id="waiting-volunters">
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card-2">
+                        <button class="button-1 btn-ora-select-mark">+</button>
+                        <button class="button-1 btn-whi-select-mark">-</button>
+                    </div>
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card-2">
+                        <button class="button-1 btn-ora-select-mark">+</button>
+                        <button class="button-1 btn-whi-select-mark">-</button>
+                    </div>
+                </div>
+
+                <div class="card request-donation">
+                    <p class="head-font">John Doe</p>
+                    <p><span class="head-font-3">Blood Group:</span> O+</p>
+                    <p><span class="head-font-3">Gender:</span> Male</p>
+                    <p><span class="head-font-3">Date of Birth:</span> 1990-01-01</p>
+                    <p><span class="head-font-3">Contact Number:</span> 123</p>
+                    <div class="select-btn-card-2">
+                        <button class="button-1 btn-ora-select-mark">+</button>
+                        <button class="button-1 btn-whi-select-mark">-</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="hello">Overall Donations Upto Now :</p>
+
+            <div class="">
+                <div class="tubes-container tubes-ele" id="tubes-1">
+                    <!-- Tubes will be dynamically generated here -->
+                </div>
+            </div>
+            <script type="text/javascript" src="js/tube.js"></script>
+
             </div>
         </div>
     </div>
