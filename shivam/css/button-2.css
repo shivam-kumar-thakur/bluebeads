@@ -1,16 +1,16 @@
 .button-2 {
     align-items: center;
     appearance: none;
-    background-color: #ff63ef;
-    border-radius: 20px;
+    background-color: #940686;
+    border-radius: 10px;
     border-style: none;
-    box-shadow:rgb(60 64 67 / 53%) 0 1px 3px 0, rgb(60 64 67 / 0%) 0 4px 8px 3px;
-    box-sizing: border-box;
-    color:black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.167);    box-sizing: border-box;
+    color:white;
     cursor: pointer;
     display: inline-flex;
     fill: currentcolor;
-    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-family: Poppins;
+    /* font-family: "Google Sans",Roboto,Arial,sans-serif; */
     font-size: 14px;
     font-weight: 500;
     height: 48px;
@@ -27,18 +27,21 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: auto;
+    width: 100%;
     will-change: transform,opacity;
     z-index: 0;
+    transition: 0.1s ease;
   }
   .button-2:active {
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
     outline: none;
   }
-  
+  .button-2:hover {
+    background-color: #6d0663;
+  }
   .button-2:focus {
     outline: none;
-    border: 2px solid #4285f4;
+    border: 3px solid #6d0663;
   }
   
   .button-2:not(:disabled) {
