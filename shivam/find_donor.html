@@ -8,9 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/navbar_style.css"> -->
     <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="stylesheet" href="css/button-2.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <titleNOR</title>
+    <style>
+        .for-me-svg{
+            height: 180px;
+            padding: 5px 0 5px 0px;
+        }
+        .heading{
+            color:black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -22,19 +34,19 @@
             </div>
             <div class="menu-nav">
                 <div class="menu-container"> 
-                    <div class="spacer-curve-1"></div>
-                    <div class="back-container-curve">
-                        <div class="content-curve">
-                            <p><a><i class="fas fa-user menu-icon-select-colour"></i> Profile</a></p>
-                        </div>
+                    <div class="content-nav">
+                        <p><a><i class="fas fa-people-roof"></i> Profile</a></p>
                     </div>
-                    <div class="spacer-curve-2"></div>
                 </div>
     
                 <div class="menu-container"> 
-                    <div class="content-nav">
-                        <p><a><i class="fas fa-droplet"></i> Request</a></p>
+                    <div class="spacer-curve-1"></div>
+                    <div class="back-container-curve">
+                        <div class="content-curve">
+                            <p><a><i class="fas fa-user menu-icon-select-colour"></i> Request</a></p>
+                        </div>
                     </div>
+                    <div class="spacer-curve-2"></div>
                 </div>
     
                 <div class="menu-container"> 
@@ -62,13 +74,15 @@
             </div>
         </div>
     </nav>
-    <h1>REQUEST DONOR</h1>
+    <h1 class="heading">Find Donor</h1>
     <div class="grid">
         <div class="section" id="section1">
             <center>
-            <h3>For Me:</h3>
-                <a href=""><button class="button" type="button">Request</button></a>
-            </center>        </div>
+            <h3>I need for myself !</h3>
+            <img src="images/forme.svg" class="for-me-svg">
+            <a href=""><button class="button-2" type="button">Request</button></a>
+            </center>        
+        </div>
         <div class="section" id="section2">
             <h3>For Others:</h3>
             <form>
@@ -89,7 +103,7 @@
                 <textarea required id="location" name="location" placeholder="Enter Your Address"></textarea>
                 <br>
                 <center>
-                    <a href=""><button class="button" type="button">Request</button></a>
+                    <a href=""><button class="button-2" type="button">Request</button></a>
                 </center>
             </form>
         </div>
@@ -160,14 +174,6 @@
     .button:hover {
         background-color: #0a3a6f;
     }
-    nav {
-        background-color: #1450A3;
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
     .logo img {
         vertical-align: middle;
         margin-right: 10px;
@@ -198,119 +204,3 @@
         border-radius: 5px;
     }
 
-    /* NAVBAR */
-    nav {
-    top: 0;
-    position:sticky; 
-    z-index: 1;
-    background-color: #1450A3;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 80px;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 2em;
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: 2px;
-}
-ol {
-    display: flex;
-    position: relative;
-    margin: auto 0;
-}
-ol li {
-    margin: 0 30px;
-    list-style: none;
-    z-index: 111;
-}
-ol li a{
-    display: block;
-    color: #fff;
-    font-size: 1em;
-    text-decoration: none;
-    transition: 0.2s 0.1s ease;
-}
-ol .slider {
-    position: absolute;
-    height: 55.5px;
-    width: 110px;
-    left: 10px;
-    top:1px;
-    background-color: #fff;
-    border-radius: 15px 15px 0 0;
-    transform: translate(0);
-    transition: 0.2s ease-in;
-}
-ol .slider::before {
-    position: absolute;
-    content: '';
-    height: 25px;
-    width: 25px;
-    background: #1450A3;
-    bottom: 0;
-    left: -25px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 13px 0 0 #fff;
-}
-ol .slider::after {
-    position: absolute;
-    content: '';
-    height: 25px;
-    width: 25px;
-    background: #1450A3;
-    bottom: 0;
-    right: -25px;
-    border-bottom-left-radius: 15px;
-    box-shadow: -13px 0 0 #fff;
-}
-.nav_input {
-    display: none;
-}
-#tap1:checked ~ nav ol li:nth-child(1) a{
-    color: #940686;
-}
-#tap2:checked ~ nav ol li:nth-child(2) a{
-    color: #940686;
-}
-#tap3:checked ~ nav ol li:nth-child(3) a{
-    color: #940686;
-}
-#tap4:checked ~ nav ol li:nth-child(4) a{
-    color: #940686;
-}
-#tap5:checked ~ nav ol li:nth-child(5) a{
-    color: #940686;
-}
-#tap6:checked ~ nav ol li:nth-child(6) a{
-    color: #940686;
-}
-#tap1:checked ~ nav ol .slider {
-    width: 110px;
-    transform: translateX(10px);
-}
-#tap2:checked ~ nav ol .slider {
-    width: 120px;
-    transform: translateX(162px);
-}
-#tap3:checked ~ nav ol .slider {
-    width: 100px;
-    transform: translateX(320px);
-}
-#tap4:checked ~ nav ol .slider {
-    width: 110px;
-    transform: translateX(463px);
-}
-#tap5:checked ~ nav ol .slider {
-    width: 125px;
-    transform: translateX(620px);
-}
-#tap6:checked ~ nav ol .slider {
-    width: 140px;
-    transform: translateX(790px);
-}
-</style>
