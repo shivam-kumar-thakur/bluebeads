@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/bluebeads_logo2.png">
+    <link rel="stylesheet" href="css/button-1.css">
+    <link rel="stylesheet" href="css/navbar_style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Feedback</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="images/bluebeads_logo3.png" height="50px">
+                <h1>Bluebeads</h1>
+            </div>
+            <div class="menu-nav">
+
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a><i class="fas fa-user "></i> Profile</a></p>
+                    </div>
+                </div>
+
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a><i class="fas fa-droplet"></i> Request</a></p>
+                    </div>
+                </div>
+    
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a><i class="fas fa-people-roof"></i> NGO</a></p>
+                    </div>
+                </div>
+    
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a><i class="fas fa-campground"></i> Camp</a></p>
+                    </div>
+                </div>
+
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a><i class="fas fa-home"></i> About Us</a></p>
+                    </div>
+                </div>
+
+                <div class="menu-container"> 
+                    <div class="spacer-curve-1"></div>
+                    <div class="back-container-curve">
+                        <div class="content-curve">
+                            <p><a><i class="fas fa-comments"></i> Feedback</a></p>
+                        </div>
+                    </div>
+                    <div class="spacer-curve-2"></div>
+                </div>
+         </div>
+    </nav>
+
+    <div class="container">
+        <div class="image">
+            <img src="images/feedback.svg" alt="Feedback" height="500px">
+        </div>
+        <div class="feedback">
+            <form>
+                <h1>Feedback</h1>
+                <h3>We appreciate feedback about your experience!</h3>
+                <label for="subject">Subject</label><br>
+                <input placeholder="Enter Subject" type="text" name="subject" id="subject"> 
+                <br>
+                <label for="feedback">Feedback</label><br>
+                <textarea id="feedback" name="feedback"></textarea>
+                <br>
+                <input type="submit" class="button-1">
+            </form>
+        </div>
+    </div>
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        /* overflow: hidden; */
+        background-color: rgb(246 246 252);
+    }
+    .container {
+        /* width: 100%; */
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+        /* margin-top: 100px ; */
+        width: 70%;
+        height: 100vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    img {
+        margin: 50px;
+    }
+    .feedback {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        border: 3px solid #1450A3;
+        border-radius: 15px;
+        font-size: 15px;
+        
+        background-color: #fff;
+        padding: 50px;
+        width: 20em;
+        color: #1450A3;
+        margin-bottom: 30px;
+
+        box-shadow: 0px 0px 10px #0000005c;
+        
+    }
+    input {
+        margin: 5px;
+        border: #1450A3 1px solid;
+        border-radius: 5px;
+        padding: 10px;
+        width: 90%;
+    }
+    .image p{
+        font-family: Poppins;
+        text-align: center;
+        color: #940686;
+        font-size: 30px;
+        margin-top: -50px;
+    }
+    label {
+        font-size: 10px;
+    }
+</style>
+</html>
