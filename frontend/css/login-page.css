@@ -28,6 +28,8 @@ a{
     padding: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
     /* height: 60px; */
 }
 input {
@@ -48,7 +50,7 @@ input {
     width: auto;        
 }
 label {
-    font-size: 10px;
+    font-size: 12px;
 }
     .button {
 align-items: center;
@@ -147,14 +149,14 @@ font-size: 29px;
 }
 .container {
 justify-content: center;
-align-items: center;
-text-align: center;
+/* align-items: center;
+text-align: center; */
 border: 0;
 font-size: 15px;
 background-color: #fff;
 padding: 50px;
 width: 20em;
-color: #1450A3;
+color: black;
 margin-bottom: 30px;
 box-shadow: 0px 0px 10px #0000005c;
 border-radius: 15px;
