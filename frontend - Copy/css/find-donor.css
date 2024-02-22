@@ -119,3 +119,6 @@ li a:hover {
     text-align: center;
     margin-bottom: 10px;
 }
+label {
+    font-weight: 500;
+}
