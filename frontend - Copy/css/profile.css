@@ -6,7 +6,8 @@ body, html {
     height: 100%;
 }
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Poppins', sans-serif;
     overflow: hidden; /* Prevent body scroll */
     display: flex;
     flex-direction: column;
@@ -36,6 +37,8 @@ body {
     overflow-y: auto; /* Enable vertical scrollbar */
     /* Hide scrollbar for Firefox */
     scrollbar-width: none;
+    box-shadow: 0px 0px 5px #0000004a;
+    z-index: 1;
     /* Hide scrollbar for WebKit browsers */
     -webkit-scrollbar {
         display: none;
@@ -93,24 +96,27 @@ body {
     font-weight: bold;
 }
 .hello{
-    font-family:cursive;
-    font-weight: 800;
+    /* font-family:cursive; */
+    font-weight: 600;
     font-size: 24px;
+    /* color: #1450A3; */
 }
 .head-font{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    text-align: center;
+    font-weight: 600;
+    color: #940686;
     font-size: 22px;
 }
 .head-font-2{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 400;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-weight: 600;
     font-size: 18px;
-    color: brown;
+    color: #1450A3;
 
 }
 .head-font-3{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-weight: 400;
     font-size: 18px;
     color: black;
@@ -129,7 +135,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     /* align-items: center; */
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: space-around;
 }
 .request-donation > * {
@@ -137,14 +143,16 @@ body {
 }
 .donation {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-evenly;
     align-items: center;
-    margin: 10px;
+    /* width: 800px; */
+    /* margin: 10px; */
     padding: 10px;
-}
+    }
+
 .donation-left {
 display: flex;
 flex-direction: row;
@@ -237,7 +245,7 @@ align-items: center;
 flex-wrap: wrap;
 flex-direction: row;
 margin:15px 5px 15px 5px;
-font-family: 'Courier New', Courier, monospace;
+/* font-family: 'Courier New', Courier, monospace; */
 font-weight: 600;
 }
 .btn-whi-select{
@@ -246,7 +254,7 @@ width: 100px;
 height: 50px;
 font-size: larger;
 color:black;
-font-family: Georgia, 'Times New Roman', Times, serif;
+/* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 .btn-ora-select{
 width: 50px;
@@ -260,7 +268,7 @@ height: 50px;
 border-radius: 50%;
 font-size: larger;
 color:black;
-font-family: Georgia, 'Times New Roman', Times, serif;
+/* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 .btn-whi-select-mark{
 width: 50px;
@@ -269,7 +277,7 @@ border-radius: 50%;
 background-color: white;
 font-size: larger;
 color:black;
-font-family: Georgia, 'Times New Roman', Times, serif;
+/* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 .select-btn-card {
 display: flex;
@@ -297,11 +305,16 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 flex-wrap: wrap;
-align-content: space-around;
+align-content: center;
 /* text-align: -webkit-auto; */
-align-items: flex-start;
+/* align-items: flex-start; */
 margin: 10px;
+/* height: 200px; */
 }
 .select-div{
 cursor: pointer;
+}
+span {
+    color:#940686;
+    /* font-style: italic; */
 }

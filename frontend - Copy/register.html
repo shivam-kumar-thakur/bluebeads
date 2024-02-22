@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Re</title>
-    <link rel="icon" href="images/bluebeads_logo2.png">
+    <title>Register</title>
+    <link rel="icon" href="images/icon.png">
+
     <link rel="stylesheet" href="css/button-1.css">
     <link rel="stylesheet" href="css/login-page.css">
 
@@ -15,23 +16,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    
 
-    <style>
-        .image-reg{
-            width: 70%;
-        }
-        .images-conatiner{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: 500;
-            color: brown;
-        }
-    </style>
+ 
 </head>
 
 <body>
 
     <div class="main-container">
         <div class="images-conatiner">
-            <img src="images/join-us.jpg" class="image-reg">
+            <img src="images/join-us.png" class="image-reg">
             <p style="font-size: 34px;"><i>"1 Donation = 4 Lives"</i></p>
         </div>
         <div class="form_section">
@@ -42,13 +34,13 @@
                 </div>
                 <form>
                     <input required type="tel" id="phno" placeholder="Enter Your Phone Number">
-                    <br>
+                    <br><br>
                     <input required type="password" id="password" placeholder="Set Your Password">
                     <br>
                     <input required type="password" id="confirm_password" placeholder="Confirm Your Password">
                     <br><br>
-                    <label for="blood_type">Your Blood Type: </label>
                     <select required name="blood_type" id="blood_type">
+                    <label for="blood_type">Your Blood Type: </label><br>
                         <br>
                         <option value="" disabled selected> - Select Your Blood Type - </option>
                         <option value="A+">A+</option>
@@ -65,8 +57,8 @@
                     <label for="confirm1">I Allow to Retreive my Location</label>
                     <br>
                     <br>
-                        <label for="confirm" id="confirm2">By signing up, you agree to our<br>Terms,Privacy Policy and Cookies Policy .
-                         </label>
+                    <p id="confirm2">By signing up, you agree to our<br>Terms,Privacy Policy and Cookies Policy.
+                    </p>
                     <br>
                     <button href="user-profile.html" class="button">Sign Up</button>
                 </form>
@@ -80,5 +72,20 @@
     </div>
     
 </body>
+
+<style>
+    #confirm2 {
+        text-align: center;
+    }
+    .image-reg{
+        width: 70%;
+    }
+    .images-conatiner{
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        font-weight: 500;
+        color: brown;
+    }
+</style>
+
 </html>
 
