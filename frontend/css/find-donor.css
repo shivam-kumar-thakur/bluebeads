@@ -126,7 +126,7 @@ label {
 @media only screen and (max-width:768px) {
         
     h1 {
-        font-size: 18px;
+        font-size: 24px;
         /* margin-bottom: 50px; */
     }
     .heading {
@@ -134,7 +134,7 @@ label {
         /* font-family: Georgia, 'Times New Roman', Times, serif; */
         padding: 0;
         /* font-size: 20px; */
-        font-size: 18px;
+        font-size: 24px;
         text-align: left;
     }
     .heading-para {
