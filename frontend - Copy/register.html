@@ -14,35 +14,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-   
+   <style>
+    body{
+        height: 100vh;
+        background-color: #f6f6fc;
+    }
+    .main-container{
+        height: 100%;
+        background-color: #f6f6fc;
+        padding: 0px 10px 0px 10px;
+    }
+    .container{
+        padding-top: 30px;
+    }
+    #confirm2 {
+        text-align: center;
+    }
+    .image-reg{
+        width: 70%;
+    }
+    .images-conatiner{
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        font-weight: 500;
+        width: 50%;
+        color: brown;
+    }
+    @media only screen and (max-width: 600px) {
+        .images-conatiner{
+            display: none;
+        }
+        .container {
+    padding-top: 30px;
+    width: 260px;
+    padding: 20px;
+    box-shadow: 0px 0px 2px #0000005c;
+    border-radius: 0px;
+}
+#container2 {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    /* height: 60px; */
+}
+.logo span{
+    display: none;
+}
+label {
+    font-size: 13px;
+    /* text-align: left; */
+}
+p{
+    font-size: 13px;
+}
+#blood_type{
+    width: 50%;
+}
 
- 
+    }
+   </style>
 </head>
 
 <body>
 
     <div class="main-container">
         <div class="images-conatiner">
-            <img src="images/join-us.png" class="image-reg">
-            <p style="font-size: 34px;"><i>"1 Donation = 4 Lives"</i></p>
+            <img src="images/signup-image.jpg" class="image-reg">
+            <p style="font-size: 34px;"><i>Join us and save 4 Lives in 1 donation</i></p>
         </div>
         <div class="form_section">
             <div class="container" id="container1">
                 <div class="logo">
                     <img src="images/bluebeads_logo.png" height="50px">
-                    BlueBeads
+                    <span>BlueBeads</span>
                 </div>
                 <form>
                     <input required type="tel" id="phno" placeholder="Enter Your Phone Number">
-                    <br><br>
+                    <br>
                     <input required type="password" id="password" placeholder="Set Your Password">
                     <br>
                     <input required type="password" id="confirm_password" placeholder="Confirm Your Password">
                     <br><br>
+                    <label for="blood_type">Your Blood Type : </label>
                     <select required name="blood_type" id="blood_type">
-                    <label for="blood_type">Your Blood Type: </label><br>
                         <br>
-                        <option value="" disabled selected> - Select Your Blood Type - </option>
+                        <option value="" disabled selected>Choose</option>
                         <option value="A+">A+</option>
                         <option value="A+">A-</option>
                         <option value="A+">B+</option>
@@ -73,19 +128,6 @@
     
 </body>
 
-<style>
-    #confirm2 {
-        text-align: center;
-    }
-    .image-reg{
-        width: 70%;
-    }
-    .images-conatiner{
-        /* font-family: Georgia, 'Times New Roman', Times, serif; */
-        font-weight: 500;
-        color: brown;
-    }
-</style>
 
 </html>
 
