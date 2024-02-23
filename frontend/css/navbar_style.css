@@ -6,6 +6,13 @@
     padding-top: 7px;
     /* z-index: ; */
 }
+a{
+    text-decoration: none;
+}
+.content-nav a{
+    text-decoration: none;
+    color: white;
+}
 .logo {
 width: 40%;
 display: flex;

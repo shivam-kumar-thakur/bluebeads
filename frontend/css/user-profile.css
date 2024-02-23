@@ -5,6 +5,13 @@ body, html {
     padding: 0;
     height: 100%;
 }
+a{
+    text-decoration: none;
+}
+.content-nav a{
+    text-decoration: none;
+    color: white;
+}
 body {
     /* font-family: Arial, sans-serif; */
     font-family: 'Poppins', sans-serif;
