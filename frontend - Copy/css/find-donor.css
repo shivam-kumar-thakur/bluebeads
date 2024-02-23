@@ -102,7 +102,7 @@ li a:hover {
 }
  
 .for-me-svg{
-    /* height: 5%; */
+    max-width: 100%;
     padding: 5px 0 5px 0px;
 }
 .heading{
@@ -121,4 +121,28 @@ li a:hover {
 }
 label {
     font-weight: 500;
+}
+
+@media only screen and (max-width:768px) {
+        
+    h1 {
+        font-size: 18px;
+        /* margin-bottom: 50px; */
+    }
+    .heading {
+        color: black;
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        padding: 0;
+        /* font-size: 20px; */
+        font-size: 18px;
+        text-align: left;
+    }
+    .heading-para {
+        font-size: 15px;
+        color: #940686;
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        padding: 0;
+        text-align: left;
+        margin-bottom: 10px;
+    }    
 }

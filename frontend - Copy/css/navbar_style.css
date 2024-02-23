@@ -84,3 +84,69 @@ color: #940686;
 .menu-icon-select-colour{
     color: #940686;
 }
+
+.section-container{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .content-nav span {
+        display: none;
+    }
+    .logo h1{
+        display: none;
+    }
+    .content-curve span{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .content-nav span {
+        display: none;
+    }
+    /* .logo h1{
+        display: none;
+    } */
+    .content-curve span{
+        display: none;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .content-nav span {
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .content-curve span{
+        display: none;
+    }
+    .nav-bar{
+        position:fixed;
+        bottom:0;
+        width: 100%;
+        z-index: 4;
+    }
+    .menu-nav{
+        width: 100%;
+    }
+    .nav-bar {
+        padding: 0px 0px 7px 0px;
+    }
+
+    .spacer-curve-1{
+        border-top-right-radius:15px ;
+        border-bottom-right-radius:0px ;
+    }
+    .spacer-curve-2{
+        border-top-left-radius:15px ;
+        border-bottom-left-radius:0px ;
+    }
+    .content-curve {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+}

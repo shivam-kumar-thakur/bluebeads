@@ -213,6 +213,7 @@ align-content: space-around;
 align-items: center;
 word-wrap: break-word;
 flex: 1;
+margin-bottom: 50px;
 }
 .tubes-container > *{
 padding: 15px;
