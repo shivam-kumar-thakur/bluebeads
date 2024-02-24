@@ -138,15 +138,6 @@ body {
     width: 150px;
     height: 40px;
 }
-.request-donation {
-    word-break: break-word;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* align-items: center; */
-    flex-wrap: nowrap;
-    align-content: space-around;
-}
 .request-donation > * {
     margin: 5px;
 }
@@ -160,7 +151,7 @@ body {
     /* width: 800px; */
     /* margin: 10px; */
     padding: 10px;
-    }
+}
 
 .donation-left {
 display: flex;
@@ -345,6 +336,19 @@ cursor: pointer;
 }
 .public-welfare-images{
     max-width: 100%;
+}
+.request-donation {
+    word-break: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    /* text-align: -webkit-auto; */
+    /* align-items: flex-start; */
+    margin: 10px;
+    min-height: 200px;
+    min-width: 300px;
 }
 @media only screen and (max-width:768px){
     .sidebar{
