@@ -7,135 +7,6 @@ chatbot {
 }
 
 
-/* Custom styles for Neumorphism buttons and sticky navbar */
-body {
-  background-color: #f7f0dd;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar {
-  position: absolute;
-  top: 0;
-  background-color: #5f8d4e;
-  z-index: 100;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px; /* Adjust padding for non-mobile applications */
-  width: 100%;
-  height: 80px;
-}
-
-/* Modified styles for Neumorphism buttons */
-.neumorphism-btn{
-  background-color: #E5D9B6;
-  border: none;
-  border-radius: 15px;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(51, 255, 0, 0.1), -2px -2px 5px rgba(58, 250, 0, 0.9);
-  transition: transform 0.2s, box-shadow 0.2s;
-  color: #3CB371; /* Set the color to your desired secondary color */
-  text-decoration: none; /* Remove underline from links */
-}
-
-.nav-link{
-  background-color: #E5D9B6;
-  border: none;
-  border-radius: 15px;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  color: #3CB371;
-}
-
-.navbar-nav {
-  background-color: #5f8d4e6e;
-}
-
-/* Hover styles for Neumorphism buttons */
-.neumorphism-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), -7px -7px 15px rgba(255, 255, 255, 0.7);
-  color: #228B22; /* Set the hover color to your desired secondary color */
-}
-
-/* Carousel image styles */
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Container styles */
-.container {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  width: 100%; /* Set the width to 100% for a parallax effect */
-}
-
-h2 {
-  color: #333333;
-  display: flex;
-  justify-content: center;
-}
-
-h5 {
-  display: flex;
-  justify-content: center;
-}
-
-.icon {
-  height: 50px;
-  width: 50px;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.learn-more {
-  display: flex;
-  justify-content: center;
-}
-
-/* Make card heights the same */
-.card {
-  height: 100%;
-  margin-bottom: 10px;
-  background: #A4BE7B;
-  border-radius: 10%;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-title {
-  flex-grow: 0.4;
-}
-
-/* Center card images */
-.icon {
-  display: block;
-  margin: 0 auto;
-}
-
-/* Secondary color (Shade of Green) */
-.secondary-color {
-  color: #3CB371; /* Medium Sea Green */
-}
-
 .chatbot-toggler {
   position: fixed;
   bottom: 30px;
@@ -204,9 +75,6 @@ body.show-chatbot .chatbot {
   display: none;
   cursor: pointer;
   transform: translateY(-50%);
-}
-header h2 {
-  font-size: 1.4rem;
 }
 .chatbot .chatbox {
   overflow-y: auto;
@@ -332,27 +200,11 @@ header h2 {
   .carousel-inner img {
       height: 300px;
   }
-
-  .container {
-      padding: 10px;
-  }
-
-  .card-body {
-    width: 70%;
-  }
-
+  .chatbot-toggler {
+    right: 20px;
+    bottom: 80px;
 }
 
-@media (max-width: 576px) {
-  /* Styles for smaller mobile devices */
-  #navbarNav{
-    background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  }
 }
 
 @media (min-width: 768px) {
@@ -364,108 +216,22 @@ header h2 {
 
 
 
-
-
-
-
-
-
-
-
-
-a:hover {
-  text-decoration: none;
-  }
-.row {
-      padding-top: 30px;
-      padding-bottom: 60px;
-      background-color: aliceblue;
-    }
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-h2 {
-  font-size: 28px;
-  color: #333; /* Choose a suitable color */
+.chatbot .chatbox {
+    overflow-y: auto;
+    height: 510px;
+    padding: 30px 20px 100px;
+    z-index: 100;
+    height: 40vh;
 }
 
-.navbar {
-  background-color: #333; /* Choose a background color */
-}
-.navbar-toggler-icon {
-  color: #fff; /* Toggle button color */
-}
-.navbar-nav .nav-link {
-  color: #fff; /* Link color */
-}
-.navbar-nav .nav-link:hover {
-  color: #ff9900; /* Hover color */
+.chatbot header {
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: #f38b02;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 
-.card {
-  background-color: #f7f7f7; /* Light gray background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-  transition: transform 0.2s; /* Add a smooth hover effect */
-}
 
-.card:hover {
-  transform: scale(1.03); /* Slightly scale up on hover */
-}
-
-.card-title {
-  font-size: 24px; /* Increase font size for titles */
-  font-weight: bold; /* Make titles bold */
-  margin-bottom: 0; /* Add some space below titles */
-  color: #333; /* Choose a suitable title color */
-}
-
-.card-text {
-  font-size: 16px; /* Set a comfortable font size for text */
-  color: #666; /* Choose a suitable text color */
-}
-
-.learn-more {
-  background-color: #ff9900; /* Button background color */
-  color: #fff; /* Button text color */
-  border: none;
-  border-radius: 5px;
-  padding: 12px 24px; /* Increase padding for better size */
-  font-size: 18px; /* Increase font size for better readability */
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  transition: background-color 0.2s; /* Add a smooth hover effect */
-  width: auto; /* Let the button width adjust to its content */
-  max-width: 100%; /* Limit button width to 100% of its container */
-}
-
-.row {
-  margin: 0 -15px; /* Remove default row padding */
-}
-
-.card {
-  background-color: #f7f7f7; /* Light gray background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgb(0 0 0 / 37%); /* Subtle box shadow */
-  transition: transform 0.2s; /* Add a smooth hover effect */
-   /* Increase right margin for spacing */
-   margin-top: 10px;
-   align-items: center;
-  margin-bottom: 20px; 
-  padding-top: 10px;/* Increase bottom margin for spacing */
-}
-.learn-more:hover {
-  background-color: #e68a00; /* Button background color on hover */
-}
-
-.learn-more:hover {
-  background-color: #e68a00; /* Hover background color */
-}
-.info-space
-{
-  padding-top: 10px;
-}
