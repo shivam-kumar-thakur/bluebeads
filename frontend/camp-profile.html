@@ -165,7 +165,7 @@
                 </div>
                 <div class="overall-short-info">
                     <div class="circle">
-                        <p><span class="head-font-2">208</span></p>
+                        <p><span class="head-font-2" id="donated-numnber">208</span></p>
                     </div>
                     <p><span class="head-font-3">Total People Donated</span></p>
                 </div>
@@ -404,6 +404,11 @@
         dummy_done_btn.addEventListener("click",(e)=>{
             popup.style.display="flex";
             div.style.display="none";
+                         // Selecting the span element with class "head-font-2"
+            var spanElement = document.getElementById("donated-numnber");
+
+            // Updating its text content to "209"
+            spanElement.textContent = "209";
         });
 
         document.getElementById("popup-btn").addEventListener("click",(e)=>{
