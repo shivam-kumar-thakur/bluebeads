@@ -4,12 +4,12 @@ const generalRouter=Router();
 
 // controllers
 import {
-    // OTPAuthRegisterSend,
-    // OTPAuthRegisterCheck,
-    // OTPAuthLoginSend,
-    // OTPAuthLoginCheck,
-    loginUser,
-    registerUser,
+    OTPAuthRegisterSend,
+    OTPAuthRegisterCheck,
+    OTPAuthLoginSend,
+    OTPAuthLoginCheck,
+    // loginUser,
+    // registerUser,
     logoutUser,
     refreshAccessToken,
     changeCurrentPassword,
@@ -18,13 +18,13 @@ import {
 
 
 // public routes
-// generalRouter.route("/register").post(OTPAuthRegisterSend);
-// generalRouter.route("/verify-phone").post(verifyJWTLogin,OTPAuthRegisterCheck);
-// generalRouter.route("/login").post(OTPAuthLoginSend);
-// generalRouter.route("/otp-verify").post(verifyJWTRegister,OTPAuthLoginCheck);
+generalRouter.route("/register").post(OTPAuthRegisterSend);
+generalRouter.route("/verify-phone").post(verifyJWTLogin,OTPAuthRegisterCheck);
+generalRouter.route("/login").post(OTPAuthLoginSend);
+generalRouter.route("/otp-verify").post(verifyJWTRegister,OTPAuthLoginCheck);
 
-generalRouter.route("/register").post(registerUser);
-generalRouter.route("/login").post(loginUser);
+// generalRouter.route("/register").post(registerUser);
+// generalRouter.route("/login").post(loginUser);
 
 //protected Routes
 generalRouter.route("/logout").patch(verifyJWT,logoutUser);
