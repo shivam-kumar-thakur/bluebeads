@@ -335,7 +335,7 @@ cursor: pointer;
     margin: 10px auto;
 }
 .public-welfare-images{
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 .request-donation {
     word-break: break-word;
