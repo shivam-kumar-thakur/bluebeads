@@ -99,20 +99,29 @@ p{
                     <br>
                     <input required type="password" id="confirm_password" placeholder="Confirm Your Password">
                     <br><br>
-                    <label for="User_Type">Your Blood Type : </label>
-                    <select required name="User_Type" id="User_Type">
-                        <!-- <br> -->
+                    <label for="blood_type">Your Blood Type : </label>
+                    <select required name="blood_type" id="blood_type">
+                        <br>
                         <option value="" disabled selected>Choose</option>
-                        <option value="user">User</option>
-                        <option value="ngo">Ngo</option>
+                        <option value="A+">A+</option>
+                        <option value="A+">A-</option>
+                        <option value="A+">B+</option>
+                        <option value="A+">B-</option>
+                        <option value="A+">AB+</option>
+                        <option value="A+">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
                     </select>
+                    <br><br>
+                    <input required type="checkbox" id="confirm" name="confirm" value="I hereby agree" required>
+                    <label for="confirm1">I Allow to Retreive my Location</label>
                     <br>
                     <br>
                     <p id="confirm2">By signing up, you agree to our<br>Terms,Privacy Policy and Cookies Policy.
                     </p>
                     <br>
+                    <button href="user-profile.html" class="button">Sign Up</button>
                 </form>
-                <button class="button" id="signup">Sign Up</button>
             </div>
             <div class="container" id="container2">
                 <span >Already ave an account?</span>
@@ -122,62 +131,6 @@ p{
         </div>
     </div>
     
-    <script>
-        document.getElementById("signup").addEventListener("click", async (event) => {
-    const phoneNumber = document.getElementById("phno").value;
-    const password = document.getElementById("password").value;
-    const confirm_password = document.getElementById("confirm_password").value;
-    const User_Type = document.getElementById("User_Type");
-    let selectedType = User_Type.options[User_Type.selectedIndex].value;
-
-    const error = document.createElement("p");
-    const pass_wrong = document.createTextNode("Password incorrect");
-
-    try {
-        if (password !== confirm_password) {
-            error.appendChild(pass_wrong);
-            error.style.color = "red";
-            document.getElementById("confirm_password").after(error);
-            throw new Error("Passwords do not match");
-        }
-
-        const response = await fetch("https://api.bluebeads.shivamkrthakur.in/v1/normal/register", {
-            method: "POST",
-            headers: {
-                "content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                "phone_num": phoneNumber,
-                "password": password,
-                "type": selectedType
-            })
-        });
-        console.log({
-                "phone_num": phoneNumber,
-                "password": password,
-                "type": selectedType
-            });
-
-        if (response.status === 201) {
-            const responseData = await response.json();
-            console.log(responseData.data.userType);
-            if (responseData.data.userType === "user") {
-                window.location.href = "user-profile-details.html";
-            } else if (responseData.data.userType === "ngo") {
-                window.location.href = "ngo-profile-details.html";
-            } else {
-                console.log("Unknown User !!!");
-            }
-        } else {
-            const errorMessage = await response.text();
-            console.log("Registration Failed", errorMessage);
-        }
-    } catch (error) {
-        console.log("Registration failed : ", error);
-    }
-});
-
-    </script>
 </body>
 
 

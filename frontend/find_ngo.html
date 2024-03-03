@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="images/icon.png">
+    <title>Find NGO</title>
+
+    <link rel="stylesheet" href="css/button-1.css">
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="stylesheet" href="css/find-ngo.css">
+    <link rel="stylesheet" href="css/camp-profile.css">
+    <link rel="stylesheet" href="css/navbar_style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .btn-width{
+        width: 30%;
+    }
+</style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+          <div class="logo">
+              <img src="images/bluebeads_logo3.png" height="50px">
+              <h1>Bluebeads</h1>
+          </div>
+          <div class="menu-nav">
+            <div class="menu-container"> 
+                <div class="content-nav">
+                    <p><a href="user-profile.html"><i class="fas fa-user"></i> <span> Profile</span></a></p>
+                </div>
+            </div>
+  
+              <div class="menu-container"> 
+                  <div class="content-nav">
+                      <p><a href="find_donor.html"><i class="fas fa-droplet"></i> <span> Request</span></a></p>
+                  </div>
+              </div>
+
+              <div class="menu-container"> 
+                <div class="spacer-curve-1"></div>
+                <div class="back-container-curve">
+                    <div class="content-curve">
+                        <p><a href="find_ngo.html"><i class="fas fa-people-roof menu-icon-select-colour"></i> <span> NGO</span></a></p>
+                    </div>
+                </div>
+                <div class="spacer-curve-2"></div>
+                </div>
+              <div class="menu-container"> 
+                  <div class="content-nav">
+                      <p><a href="find_ngo.html"><i class="fas fa-campground"></i> <span> Camp</span></a></p>
+                  </div>
+              </div>
+
+              <div class="menu-container"> 
+                  <div class="content-nav">
+                      <p><a href=""><i class="fas fa-home"></i> <span> About Us</span></a></p>
+                  </div>
+              </div>
+
+              <div class="menu-container"> 
+                  <div class="content-nav">
+                      <p><a href="feedback.html"><i class="fas fa-comments"></i> <span> Feedback</span></a></p>
+                  </div>
+          </div>
+      </div>
+  </nav>
+
+    <p class="hello centre-text" >Welcome, we are blessed to have !</p>
+
+  <div class="donation">
+    <div class="overall-short-info">
+        <div class="circle">
+            <p><span class="head-font-2">9</span></p>
+        </div>
+        <p><span class="head-font-3">Registered NGO's</span></p>
+    </div>
+    <div class="overall-short-info">
+        <div class="circle">
+            <p><span class="head-font-2">10k+</span></p>
+        </div>
+        <p><span class="head-font-3">Registered Donors</span></p>
+    </div>
+    <div class="overall-short-info">
+        <div class="circle">
+            <p><span class="head-font-2">5000</span></p>
+        </div>
+        <p><span class="head-font-3">Donated Users</span></p>
+    </div>
+
+  <div class="container-ngo-primary">
+    <div class="container">
+        <h3>Search NGO</h3>
+
+        <div class="select_option"> 
+            <form action="">
+                <select required class="form-select country" aria-label="Default select example" onchange="loadStates()">
+                    <option value="" selected disabled>Select Country</option>
+                </select>
+                <select class="form-select state" aria-label="Default select example" onchange="loadCities()">
+                    <option selected>Select State</option>
+                </select>
+                <select class="form-select city" aria-label="Default select example">
+                    <option selected>Select City</option>
+                </select>
+                <button class="button-1 btn-width">Find NGO's</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h3>Search Camp</h3>
+
+        <div class="select_option">
+            <form action="">
+                <select required class="form-select country" aria-label="Default select example" onchange="loadStates()">   
+                    <option value="" selected disabled>Select Country</option>
+                </select>
+                <select class="form-select state" aria-label="Default select example" onchange="loadCities()">
+                    <option selected>Select State</option>
+                </select>
+                <select class="form-select city" aria-label="Default select example">
+                    <option selected>Select City</option>
+                </select>
+                <button class="button-1 btn-width">Find Camp</button>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/find_ngo.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
