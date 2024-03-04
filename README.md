@@ -13,7 +13,7 @@
 
 ## Summary
 
-BlueBeads is a revolutionary platform aimed at connecting blood donors and NGO camps, providing a seamless solution to address emergency blood requirements. This proposal is submitted for the Google Solution Challenge 2024, focusing on Sustainable Development Goals (SDGs) 3 (Good Health and Well-being), 9 (Industry, Innovation, and Infrastructure), 11 (Sustainable Cities and Communities), 10 (Reduced Inequality), and 17 (Partnerships for the Goals).
+BlueBeads is a revolutionary platform aimed at connecting blood donors and NGO camps, providing a seamless solution to address emergency blood requirements. This proposal is submitted for the Google Solution Challenge 2024, focusing on Sustainable Development Goals (SDGs) 3 (Good Health and Well-being), 10 (Reduced Inequalities), 17 (Partnerships for the Goals), 9 (Industry, Innovation, and Infrastructure), and 11 (Sustainable Cities and Communities).
 ****
 ## Problem Statement
 
@@ -40,8 +40,8 @@ BlueBeads is currently a web-based platform that leverages Machine Learning tech
 
 4. *Feedback and Recognition:*
    - Allows donors to receive feedback and recognition for their contributions, fostering a sense of community and responsibility.
-****
-### 3.2. [Addressing SDGs (Sustainable Development Goals)](https://sdgs.un.org/goals)
+
+### 3.2. Addressing SDGs [(Sustainable Development Goals)](https://sdgs.un.org/goals)
 
 1. *SDG 3: Good Health and Well-being:*
    - BlueBeads directly contributes to saving lives during emergencies, promoting good health and well-being.
@@ -57,7 +57,6 @@ BlueBeads is currently a web-based platform that leverages Machine Learning tech
 
 5. *SDG 11: Sustainable Cities and Communities:*
    - Strengthens community ties by creating a network of blood donors and NGOs for sustainable emergency response.
-****
 
 ### 3.3. Tech Stack
 *BACKEND*
