@@ -1,27 +1,31 @@
-# BlueBeads
-## Transforming Drops into Oceans of Hope
-
+# BlueBeads : *Transforming Drops into Oceans of Hope*
+****
 ## Content:
-1. Executive Summary
-2. Problem Statement
-3. BlueBeads Solution
-3.1. Features
-3.2. Addressing SDG
-3.3 Future Scope
+- [BlueBeads : *Transforming Drops into Oceans of Hope*](#bluebeads--transforming-drops-into-oceans-of-hope)
+  - [Content:](#content)
+  - [Summary](#summary)
+  - [Problem Statement](#problem-statement)
+  - [BlueBeads](#bluebeads)
+    - [*3.1. Features*](#31-features)
+    - [3.2. Addressing SDGs (Sustainable Development Goals)](#32-addressing-sdgs-sustainable-development-goals)
+    - [3.3. Tech Stack](#33-tech-stack)
+  - [Future Scope](#future-scope)
 
-## Executive Summary
+## Summary
 
 BlueBeads is a revolutionary platform aimed at connecting blood donors and NGO camps, providing a seamless solution to address emergency blood requirements. This proposal is submitted for the Google Solution Challenge 2024, focusing on Sustainable Development Goals (SDGs) 3 (Good Health and Well-being), 9 (Industry, Innovation, and Infrastructure), 11 (Sustainable Cities and Communities), 10 (Reduced Inequality), and 17 (Partnerships for the Goals).
 ****
 ## Problem Statement
 
-Every year, countless lives are lost due to the unavailability of timely blood transfusions during emergencies. The existing systems often lack efficiency in connecting potential donors with those in need, leading to critical delays and sometimes irreversible consequences. This underscores the urgent need for a robust, technologically advanced platform to bridge the gap between donors and those seeking blood during emergencies.
+In 2022, it was reported that India needs 15 million units of blood each year but manages to collect only 11 million units. Despite this, India wastes about 6.5 lakh units of blood and blood components each year due to lack of facilities, resulting in an alarming death count of 12,000 per year.[(Business Insider: INDIA)](https://www.businessinsider.in/science/health/news/nearly-12000-individuals-die-every-day-due-to-lack-of-quality-blood/articleshow/92196089.cms) 
+
+The existing systems often lack efficiency in connecting potential donors with those in need, leading to critical delays and sometimes irreversible consequences. This underscores the urgent need for a robust, technologically advanced platform to bridge the gap between donors and those seeking blood during emergencies.
 ****
-## BlueBeads Solution
+## BlueBeads
 
-BlueBeads is a web-based platform that leverages technology to streamline the blood donation process. It acts as a centralized hub for blood donors and NGO camps, providing a real-time and geographically targeted system to match donors with emergencies. The platform utilizes a user-friendly interface and employs advanced algorithms to ensure swift and efficient responses.
+BlueBeads is currently a web-based platform that leverages Machine Learning technology to streamline the blood donation process. It acts as a centralized hub for blood donors and NGO camps, providing a real-time and geographically targeted system to match donors with emergencies. The platform utilizes a user-friendly interface and employs advanced algorithms to ensure swift and efficient responses.
 
-*Key Features:*
+### *3.1. Features*
 
 1. *User-friendly Dashboard:*
    - Donors can easily register and update their profiles, specifying blood type, location, and availability.
@@ -37,24 +41,44 @@ BlueBeads is a web-based platform that leverages technology to streamline the bl
 4. *Feedback and Recognition:*
    - Allows donors to receive feedback and recognition for their contributions, fostering a sense of community and responsibility.
 ****
-## Addressing SDGs (Sustainable Development Goals):
+### 3.2. [Addressing SDGs (Sustainable Development Goals)](https://sdgs.un.org/goals)
 
 1. *SDG 3: Good Health and Well-being:*
    - BlueBeads directly contributes to saving lives during emergencies, promoting good health and well-being.
 
-2. *SDG 9: Industry, Innovation, and Infrastructure:*
-   - Utilizes innovative technology to create an efficient and scalable infrastructure for blood donation management.
-
-3. *SDG 11: Sustainable Cities and Communities:*
-   - Strengthens community ties by creating a network of blood donors and NGOs for sustainable emergency response.
-
-4. *SDG 10: Reduced Inequality:*
+2. *SDG 10: Reduced Inequalities:*
    - Provides an equal and accessible platform for blood donation, reducing disparities in accessing timely healthcare.
 
-5. *SDG 17: Partnerships for the Goals:*
+3. *SDG 17: Partnerships for the Goals:*
    - Encourages collaboration between donors, NGOs, and technology providers to achieve the common goal of saving lives.
+   - 
+4. *SDG 9: Industry, Innovation, and Infrastructure:*
+   - Utilizes innovative technology to create an efficient and scalable infrastructure for blood donation management.
+
+5. *SDG 11: Sustainable Cities and Communities:*
+   - Strengthens community ties by creating a network of blood donors and NGOs for sustainable emergency response.
 ****
-## Future Scope:
+
+### 3.3. Tech Stack
+*BACKEND*
+- Google Analytics
+- Google Maps
+- Firebase
+- MongoDB
+- NodeJS + Express  
+
+*ARTIFICIAL INTELLIGENCE (A.I.)*
+- Gemini
+- Tensorflow
+- Google Colab
+- Kaggle
+
+*DEPLOYMENT*
+- Google Cloud
+- Docker
+- Nginx
+****
+## Future Scope
 
 To enhance accessibility and reach a wider audience, BlueBeads plans to develop a mobile application. The BlueBeads app will bring the life-saving features to users' pockets, allowing for quicker response times and increased participation in blood donation initiatives.
 
