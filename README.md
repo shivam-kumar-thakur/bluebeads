@@ -1,27 +1,27 @@
 # BlueBeads : *Transforming Drops into Oceans of Hope*
 ****
-## Content:
+## Content
 - [BlueBeads : *Transforming Drops into Oceans of Hope*](#bluebeads--transforming-drops-into-oceans-of-hope)
-  - [Content:](#content)
-  - [Summary](#summary)
-  - [Problem Statement](#problem-statement)
-  - [BlueBeads](#bluebeads)
+  - [Content](#content)
+  - [1. Summary](#1-summary)
+  - [2. Problem Statement](#2-problem-statement)
+  - [3. BlueBeads](#3-bluebeads)
     - [*3.1. Features*](#31-features)
     - [3.2. Addressing SDGs (Sustainable Development Goals)](#32-addressing-sdgs-sustainable-development-goals)
     - [3.3. Tech Stack](#33-tech-stack)
-  - [Future Scope](#future-scope)
+  - [4.  Future Scope](#4--future-scope)
 
-## Summary
+## 1. Summary
 
 BlueBeads is a revolutionary platform aimed at connecting blood donors and NGO camps, providing a seamless solution to address emergency blood requirements. This proposal is submitted for the Google Solution Challenge 2024, focusing on Sustainable Development Goals (SDGs) 3 (Good Health and Well-being), 10 (Reduced Inequalities), 17 (Partnerships for the Goals), 9 (Industry, Innovation, and Infrastructure), and 11 (Sustainable Cities and Communities).
 ****
-## Problem Statement
+## 2. Problem Statement
 
 In 2022, it was reported that India needs 15 million units of blood each year but manages to collect only 11 million units. Despite this, India wastes about 6.5 lakh units of blood and blood components each year due to lack of facilities, resulting in an alarming death count of 12,000 per year.[(Business Insider: INDIA)](https://www.businessinsider.in/science/health/news/nearly-12000-individuals-die-every-day-due-to-lack-of-quality-blood/articleshow/92196089.cms) 
 
 The existing systems often lack efficiency in connecting potential donors with those in need, leading to critical delays and sometimes irreversible consequences. This underscores the urgent need for a robust, technologically advanced platform to bridge the gap between donors and those seeking blood during emergencies.
 ****
-## BlueBeads
+## 3. BlueBeads
 
 BlueBeads is currently a web-based platform that leverages Machine Learning technology to streamline the blood donation process. It acts as a centralized hub for blood donors and NGO camps, providing a real-time and geographically targeted system to match donors with emergencies. The platform utilizes a user-friendly interface and employs advanced algorithms to ensure swift and efficient responses.
 
@@ -77,7 +77,7 @@ BlueBeads is currently a web-based platform that leverages Machine Learning tech
 - Docker
 - Nginx
 ****
-## Future Scope
+## 4.  Future Scope
 
 To enhance accessibility and reach a wider audience, BlueBeads plans to develop a mobile application. The BlueBeads app will bring the life-saving features to users' pockets, allowing for quicker response times and increased participation in blood donation initiatives.
 
