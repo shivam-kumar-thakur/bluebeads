@@ -112,4 +112,4 @@ In conclusion, BlueBeads is a transformative solution addressing critical gaps i
 ## 5. Meet The Team
 - [Shivam Kumar Thakur](https://github.com/shivam-kumar-thakur)
 - [Joshua S Raju](https://github.com/JoshuaR26)
-- [Ananya Bhalotia]() 
+- [Ananya Bhalotia](https://github.com/ananyabhalotia) 
