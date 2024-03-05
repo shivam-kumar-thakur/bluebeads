@@ -7,9 +7,9 @@
   - [2. Problem Statement](#2-problem-statement)
   - [3. BlueBeads](#3-bluebeads)
     - [*3.1. Features*](#31-features)
-    - [3.2. Addressing SDGs (Sustainable Development Goals)](#32-addressing-sdgs-sustainable-development-goals)
-    - [3.3. Tech Stack](#33-tech-stack)
-    - [3.4. Navigation](#34-navigation)
+    - [*3.2. Addressing SDGs* (Sustainable Development Goals)](#32-addressing-sdgs-sustainable-development-goals)
+    - [*3.3. Tech Stack*](#33-tech-stack)
+    - [*3.4. Navigation*](#34-navigation)
   - [4.  Future Scope](#4--future-scope)
   - [5. Meet The Team](#5-meet-the-team)
 ****
@@ -45,7 +45,7 @@ BlueBeads is currently a web-based platform that leverages Machine Learning tech
 4. **Feedback and Recognition:**
    - Allows donors to receive feedback and recognition for their contributions, fostering a sense of community and responsibility.
 
-### 3.2. Addressing SDGs [(Sustainable Development Goals)](https://sdgs.un.org/goals)
+### *3.2. Addressing SDGs* [(Sustainable Development Goals)](https://sdgs.un.org/goals)
 
 1. **SDG 3: Good Health and Well-being:**
    - BlueBeads directly contributes to saving lives during emergencies, promoting good health and well-being.
@@ -62,7 +62,7 @@ BlueBeads is currently a web-based platform that leverages Machine Learning tech
 5. **SDG 11: Sustainable Cities and Communities:**
    - Strengthens community ties by creating a network of blood donors and NGOs for sustainable emergency response.
 
-### 3.3. Tech Stack
+### *3.3. Tech Stack*
 **BACKEND**
 - Google Analytics
 - Google Maps
@@ -81,7 +81,7 @@ BlueBeads is currently a web-based platform that leverages Machine Learning tech
 - Docker
 - Nginx
 
-### 3.4. Navigation
+### *3.4. Navigation*
 
 1. **User Registration:**
    - The journey begins with a straightforward user registration process. Donors and NGO camps create accounts, providing essential information such as name, contact details, and location.
