@@ -88,15 +88,8 @@
             </div>
             <!-- Primary details -->
             <!-- Primary details -->
-            <div class="primary-details">
-                <p><span class="head-font-2">NGO NAME:</span> Prayas Foundation</li>
-                <p><span class="head-font-2">NGO Head Name:</span> Dilip Kumar Dubey</li>
-                <p><span class="head-font-2">NGO Head Contact:</span> +91123456789</li>
-                <p><span class="head-font-2">NGO Head Email:</span> dilipkumar0673@gmail.com</li>
-                <p><span class="head-font-2">NGO Head Gender:</span> Male</li>
-                <p><span class="head-font-2">Location:</span> Renukoot, Uttar Pradesh, INDIA 231217</li>
-                <p><span class="head-font-2">Created At:</span> 13-07-2015</li>
-                <p><span class="head-font-2">Updated At:</span> 21-02-2024</li>
+            <div class="primary-details" id="primary-details-ngo">
+
             </div>
         </div>
 
@@ -112,25 +105,25 @@
             <div class="donation">
                 <div class="overall-short-info">
                     <div class="circle">
-                        <p><span class="head-font-2">1</span></p>
+                        <p><span class="head-font-2" id="total-camps"></span></p>
                     </div>
                     <p><span class="head-font-3">Total Camps</span></p>
                 </div>
                 <div class="overall-short-info">
                     <div class="circle">
-                        <p><span class="head-font-2">53</span></p>
+                        <p><span class="head-font-2" id="total-vol-reg"></span></p>
                     </div>
                     <p><span class="head-font-3">Volunteers Registered</span></p>
                 </div>
                 <div class="overall-short-info">
                     <div class="circle">
-                        <p><span class="head-font-2">307</span></p>
+                        <p><span class="head-font-2" id="total-donor-reg"></span></p>
                     </div>
                     <p><span class="head-font-3">Donors Registered</span></p>
                 </div>
                 <div class="overall-short-info">
                     <div class="circle">
-                        <p><span class="head-font-2">208</span></p>
+                        <p><span class="head-font-2"  id="total-people-donated"></span></p>
                     </div>
                     <p><span class="head-font-3">People Donated</span></p>
                 </div>
@@ -156,8 +149,7 @@
                     <!-- Tubes will be dynamically generated here -->
                 </div>
             </div>
-            <script type="text/javascript" src="js/tube.js"></script>
-
+            
 
 
 
@@ -197,5 +189,61 @@
       </div>
 
 <script src="js/chatbot-script.js" defer></script>
+<script src="js/ngo-profile.js"></script>
 </body>
 </html>
+
+<!-- 
+
+{
+    "success": false,
+    "message": "Fill user details first."
+}
+{
+    "message": "NGO details retrieved successfully",
+    "data": {
+        "details": {
+            "location": {
+                "coordinates": [
+                    40.7128,
+                    -74.006
+                ],
+                "country": "United States",
+                "state": "New York",
+                "postalCode": "10000",
+                "type": "Point"
+            },
+            "_id": "65d252a9f7c01b65cd7043be",
+            "ngo_name": "ngo1",
+            "ngo_description": "trail ngo",
+            "camps": [],
+            "ngoHeadName": "John Doe",
+            "ngoHeadContact": "+91123456789",
+            "ngoHeadEmail": "john@example.com",
+            "ngoHeadGender": "male",
+            "createdAt": "2024-02-18T18:55:37.650Z",
+            "updatedAt": "2024-02-18T18:55:37.650Z",
+            "__v": 0
+        },
+        "overallData": {
+            "totalcamp": 0,
+            "totalVoulntersRegister": 0,
+            "totalDonorsRegister": 0,
+            "totalPersonsDonated": 0,
+            "bloodGroups": {
+                "A+": 0,
+                "A-": 0,
+                "B+": 0,
+                "B-": 0,
+                "AB+": 0,
+                "AB-": 0,
+                "O+": 0,
+                "O-": 0
+            }
+        }
+    },
+    "statuscode": 200,
+    "success": true
+}
+
+ -->

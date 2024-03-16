@@ -133,7 +133,7 @@
             </div>
             <!-- Primary details -->
             <!-- Primary details -->
-            <div class="primary-details">
+            <div class="primary-details" id="camp-primary-info">
                 <!-- <p><span class="head-font-2">Camp Name:</span>Blood Donation Camp</li> -->
                 <p><span class="head-font-2">Camp Description:</span>Prayas Foundation, Renukoot is a group of people who have pledged themselves for fulfilling the shortage of blood & components to the needful as soon as possible.</li>
                 <p><span class="head-font-2">Donation Period:</span>  FROM 04-15-2015 to Present</li>
@@ -459,3 +459,82 @@
     </script>
 </body>
 </html>
+
+
+{
+    "success": true,
+    "message": "Success: Camp details retrieved successfully.",
+    "campDetails": {
+        "_id": "65d2709544488101701d2f93",
+        "campName": "Blood Donation Camp",
+        "ngo": "65d252a9f7c01b65cd7043be",
+        "campDescription": "A blood donation camp organized by XYZ Foundation",
+        "donationStartDate": "2024-03-15T00:00:00.000Z",
+        "donationEndDate": "2024-03-16T00:00:00.000Z",
+        "donationStartTime": 9,
+        "donationEndTime": 17,
+        "donorsRegister": [{
+                "donor": "65d252a9f7c01b65cd7043be",
+                "bloodType": "A+",
+                "status": 1
+            },
+            {
+                "donor": "65d252a9f7c01b65cd7043bf",
+                "bloodType": "B+",
+                "status": 1
+            },
+            {
+                "donor": "65d252a9f7c01b65cd7043c0",
+                "bloodType": "O-",
+                "status": 1
+            }
+        ],
+        "volunteersRegister": [{
+            "user_id": "65d252a9f7c01b65cd7043c1",
+            "approvalStatus": 1
+        }],
+        "createdAt": "2024-02-18T21:03:17.919Z",
+        "updatedAt": "2024-02-18T21:03:17.919Z",
+        "__v": 0
+    },
+    "overallData": {
+        "totalcamp": 1,
+        "totalVolunteersRegister": 1,
+        "totalDonorsRegister": 3,
+        "totalPersonsDonated": 3,
+        "bloodGroups": {
+            "A+": {
+                "total": 1,
+                "donated": 1
+            },
+            "A-": {
+                "total": 0,
+                "donated": 0
+            },
+            "B+": {
+                "total": 1,
+                "donated": 1
+            },
+            "B-": {
+                "total": 0,
+                "donated": 0
+            },
+            "AB+": {
+                "total": 0,
+                "donated": 0
+            },
+            "AB-": {
+                "total": 0,
+                "donated": 0
+            },
+            "O+": {
+                "total": 0,
+                "donated": 0
+            },
+            "O-": {
+                "total": 1,
+                "donated": 1
+            }
+        }
+    }
+}
