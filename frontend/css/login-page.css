@@ -1,0 +1,183 @@
+* {
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+    font-family: 'Poppins', sans-serif;
+    /* font-family:'Lucida', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif     */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    /* letter-spacing: 2px; */
+    margin-bottom: 30px;
+}
+
+body {
+    background-color: #c5d4f2;
+    width: 100%;
+    /* height: 100vh; */
+    margin: 20px auto;
+    /* padding-top: 30px; */
+}
+a{
+    text-decoration: none;
+    color: #1450A3;
+    text-align: center;
+}
+#container2 {
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    /* height: 60px; */
+}
+input {
+    margin: 5px;
+    border: #1450A3 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+}
+.image p{
+    font-family: 'Poppins';
+    text-align: center;
+    color: #940686;
+    font-size: 30px;
+    /* font-weight: 500; */
+    /* margin-top: -50px; */
+}
+#confirm {
+    width: auto;        
+}
+#blood_type{
+    width: 50%;
+}
+label {
+    font-size: 15px;
+    /* text-align: left; */
+}
+    .button {
+align-items: center;
+appearance: none;
+background-color: #ffa600;
+border-radius: 10px;
+border-style: none;
+box-shadow:rgba(60, 64, 67, 0.244) 0 1px 3px 0, rgb(60 64 67 / 0%) 0 4px 8px 3px;    
+box-sizing: border-box;
+color:black;
+cursor: pointer;
+display: inline-flex;
+fill: currentcolor;
+/* font-family: "Google Sans",Roboto,Arial,sans-serif; */
+font-size: 14px;
+font-weight: 500;
+height: 35px;
+justify-content: center;
+letter-spacing: .25px;
+line-height: normal;
+max-width: 100%;
+overflow: visible;
+padding: 2px 24px;
+position: relative;
+text-align: center;
+text-transform: none;
+transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+width: auto;
+will-change: transform,opacity;
+z-index: 0;
+padding: 15px;
+    margin: 10px;
+    width: 18rem;
+}
+.button-1:active {
+box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+outline: none;
+}
+
+.button-1:focus {
+outline: none;
+border: 2px solid #4285f4;
+}
+
+.button-1:not(:disabled) {
+box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-1:not(:disabled):hover {
+box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-1:not(:disabled):focus {
+box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-1:not(:disabled):active {
+box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-1:disabled {
+box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.image{
+    display: flex;
+}
+.main-container {
+    display: flex;
+    /* width: 100%; */
+    margin: auto;
+    /* height: 100%; */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    font-weight: 500;
+}
+.images-conatiner {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: space-around;
+justify-content: space-around;
+align-items: center;
+}
+.images-conatiner p{
+    margin: 20px;
+    /* font-family: cursive; */
+    color: #940686;
+    text-align: center;
+    font-size: 29px;
+    /* font-weight: 400; */
+}
+.container {
+justify-content: center;
+align-items: center;
+/* text-align: center; */
+border: 0;
+font-size: 15px;
+background-color: #fff;
+padding: 50px;
+padding-bottom: 20px;
+width: 20em;
+/* color: #1450A3; */
+color: black;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 400;
+margin-bottom: 30px;
+box-shadow: 0px 0px 10px #0000005c;
+border-radius: 15px;
+}
+
+p {
+    width: 100%;
+}

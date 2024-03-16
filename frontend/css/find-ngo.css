@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+.container {
+  margin: auto;
+  margin-top: 5%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border: 3px solid #1450A3
+}
+body{
+  background-color: #f6f6fc;
+}
+.container-ngo-primary {
+display: flex;
+width: 100%;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: center;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 20px;
+}
+.container-ngo-primary > *{
+  margin: 20px;
+  width: 40%;
+}
+.circle{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.centre-text{
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 2px solid #1450A3;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.button {
+    background-color: #1450A3;
+    color: #fff;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+.button:hover {
+    background-color: #0a3a6f;
+}
+#tap3:checked ~ nav ol li:nth-child(3) a{
+ color: #940686;
+}
+#tap3:checked ~ nav ol .slider {
+  width: 100px;
+  transform: translateX(300px);
+} 
+.select-div{
+  cursor: pointer;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid orange;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    font-size: medium;
+}
+.primary-details {
+    border-radius: 5px;
+    padding: 0px 20px 20px 20px;
+    background-color: white;
+    width: 20vw;
+    margin: 10px auto;
+}
+
+@media only screen and (max-width:400px){
+  .container-ngo-primary > * {
+    margin: 0px;
+    width:100%;
+}
+  
+}

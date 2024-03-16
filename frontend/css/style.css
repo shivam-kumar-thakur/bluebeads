@@ -1,0 +1,127 @@
+@import url('');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.content-nav a{
+    text-decoration: none;
+    color: white;
+}
+body {
+
+}
+nav {
+    top: 0;
+    position:sticky; 
+    z-index: 1;
+    background-color: #1450A3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2em;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+}
+ol {
+    display: flex;
+    position: relative;
+    margin: auto 0;
+}
+ol li {
+    margin: 0 30px;
+    list-style: none;
+    z-index: 111;
+}
+ol li a{
+    display: block;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    transition: 0.2s 0.1s ease;
+}
+ol .slider {
+    position: absolute;
+    height: 55.5px;
+    width: 110px;
+    left: 10px;
+    top:-9px;
+    background-color: #f6f6fc;
+    border-radius: 15px 15px 0 0;
+    transform: translate(0);
+    transition: 0.2s ease-in;
+}
+ol .slider::before {
+    position: absolute;
+    content: '';
+    height: 25px;
+    width: 25px;
+    background: #1450A3;
+    bottom: 0;
+    left: -25px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 13px 0 0 #f6f6fc;
+}
+ol .slider::after {
+    position: absolute;
+    content: '';
+    height: 25px;
+    width: 25px;
+    background: #1450A3;
+    bottom: 0;
+    right: -25px;
+    border-bottom-left-radius: 15px;
+    box-shadow: -13px 0 0 #f6f6fc;
+}
+input {
+    display: none;
+}
+#tap1:checked ~ nav ol li:nth-child(1) a{
+    color: #940686;
+}
+#tap2:checked ~ nav ol li:nth-child(2) a{
+    color: #940686;
+}
+#tap3:checked ~ nav ol li:nth-child(3) a{
+    color: #940686;
+}
+#tap4:checked ~ nav ol li:nth-child(4) a{
+    color: #940686;
+}
+#tap5:checked ~ nav ol li:nth-child(5) a{
+    color: #940686;
+}
+#tap6:checked ~ nav ol li:nth-child(6) a{
+    color: #940686;
+}
+#tap2:checked ~ nav ol .slider {
+    width: 120px;
+    transform: translateX(128px);
+}
+#tap3:checked ~ nav ol .slider {
+    width: 100px;
+    transform: translateX(270px);
+}
+#tap4:checked ~ nav ol .slider {
+    width: 110px;
+    transform: translateX(393px);
+}
+#tap5:checked ~ nav ol .slider {
+    width: 125px;
+    transform: translateX(530px);
+}
+#tap6:checked ~ nav ol .slider {
+    width: 140px;
+    transform: translateX(680px);
+}

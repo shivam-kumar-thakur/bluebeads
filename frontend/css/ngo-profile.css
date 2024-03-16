@@ -1,0 +1,230 @@
+
+/* Overall styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    overflow: hidden; /* Prevent body scroll */
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+.content-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Header styling */
+/* header {
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+} */
+
+/* Main container */
+.container-1 {
+display: flex;
+flex: 1;
+overflow: hidden; /* Prevent content overflow */
+word-wrap: break-word;
+}
+
+/* Left sidebar styling */
+.sidebar {
+background-color: white;
+overflow: auto;
+overflow-y: auto; /* Enable vertical scrollbar */
+/* Hide scrollbar for Firefox */
+scrollbar-width: none;
+box-shadow: 0px 0px 5px #0000004a;
+z-index: 1;
+/* Hide scrollbar for WebKit browsers */
+-webkit-scrollbar {
+display: none;
+}
+}
+
+/* Right content styling */
+.content {
+flex: 1;
+overflow-y: auto; /* Allow scrolling */
+padding: 20px;
+background-color: #f6f6fc;
+}
+
+/* Basic styling for the card */
+.card-1 {
+width: 20vw;
+border-radius: 10px;
+text-align: center;
+overflow: hidden;
+position: relative;
+margin-bottom: 10px;
+}
+
+/* Styling for the image */
+.card-1 img {
+width: 80%;
+border-radius: 50%;
+margin-top: 50px; /* Adjust as needed */
+}
+
+/* Styling for the name */
+.card-1 .name {
+margin-top: 20px;
+font-size: 24px;
+font-weight: bold;
+}
+
+/* Primary details styling */
+.primary-details {
+border-radius: 5px;
+padding: 5px 20px 5px 20px;
+background-color: white;
+width: 20vw;
+margin: 10px auto;
+}
+
+.primary-details p {
+margin: 10px 5px 0px 5px;
+font-size: 16px;
+}
+
+.info-name {
+margin: 10px 5px 0px 5px;
+font-weight: bold;
+}
+.hello{
+/* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+font-weight: 600;
+font-size: 24px;
+}
+.head-font{
+/* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+text-align: center;
+font-weight: 600;
+color: #940686;
+font-size: 22px;
+}
+.head-font-2{
+/* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+font-weight: 600;
+font-size: 18px;
+color: #1450A3;
+
+}
+.head-font-3{
+/* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+font-weight: 400;
+font-size: 18px;
+color: black;
+
+}
+.btn-or{
+width: 150px;
+}
+.btn-pur{
+width: 150px;
+height: 40px;
+}
+.request-donation {
+word-break: break-word;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+/* align-items: center; */
+flex-wrap: wrap;
+align-content: space-around;
+}
+.request-donation > * {
+margin: 5px;
+}
+.donation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.donation-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.tubes-ele > *{
+    margin: 10px;
+}
+.card-3{
+    width: auto;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    word-break: break-word;
+    width: 100%;
+}
+.overall-short-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+.overall-short-info > *{
+    margin: 5px;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #ffa600;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+img.no_data {
+    height: 30%;
+}
+@media only screen and (max-width:768px){
+.sidebar{
+display: none;
+}
+.card{
+width: auto;
+}
+.select-div{
+flex-wrap:nowrap;
+}
+.content{
+padding: 10px;
+}
+.donation-left {
+margin: 0px;
+padding: 0px;
+justify-content: space-around;
+}
+}

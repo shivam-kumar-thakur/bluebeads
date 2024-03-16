@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/icon.png">
+
+      <!-- ? POPPINS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/button-2.css">
+    <link rel="stylesheet" href="css/button-1.css">
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="stylesheet" href="css/user-profile.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Chat bot gemmini -->
+ <!-- Include Bootstrap CSS -->
+ <link rel="stylesheet" href="css/chatbot-style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <style>
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="images/bluebeads_logo3.png" height="50px">
+                <h1>Bluebeads</h1>
+            </div>
+            <div class="menu-nav">
+                <div class="menu-container"> 
+                    <div class="spacer-curve-1"></div>
+                    <div class="back-container-curve">
+                        <div class="content-curve">
+                            <p><a href="user-profile.html"><i class="fas fa-user menu-icon-select-colour"></i> <span> Profile</span></a></p>
+                        </div>
+                    </div>
+                    <div class="spacer-curve-2"></div>
+                </div>
+    
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href="find_donor.html"><i class="fas fa-droplet"></i> <span> Request</span></a></p>
+                    </div>
+                </div>
+    
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href="find_ngo.html"><i class="fas fa-people-roof"></i> <span> NGO</span></a></p>
+                    </div>
+                </div>
+    
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href="find_ngo.html"><i class="fas fa-campground"></i> <span> Camp</span></a></p>
+                    </div>
+                </div>
+
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href=""><i class="fas fa-home"></i> <span> About Us</span></a></p>
+                    </div>
+                </div>
+
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href="feedback.html"><i class="fas fa-comments"></i> <span> Feedback</span></a></p>
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main container -->
+    <div class="container-1">
+        <!-- Left sidebar -->
+        <div class="sidebar">
+            <!-- User card -->
+            <div class="card-1">
+                <img src="images/shivam.jpg" alt="User Image">
+                <div class="name" id="userName"></div>
+            </div>
+            <!-- Primary details -->
+            <div class="primary-details" id="primary-details-overall">
+            
+            </div>
+        </div>
+
+        <!-- Right content -->
+        <div class="content">
+            <!-- Request donation section -->
+            <p class="hello" id="hello"></p>
+            <p>
+                <i>Each One of Us is a Drop in an Ocean of Hope.</i>
+            </p>
+            <div class="donation donation-primary" id="first-action-group">
+                
+            </div>
+            <hr>
+            <p class="hello">Public Welfare</p>
+            <div class="donation" id="donation-div">
+                
+
+            </div>
+            <hr>
+            <p class="hello">Blood Banks in User's State</p>
+            <div class="donation" id="blood-banks-div">
+                
+            </div>
+            <hr>
+            <p class="hello">Camps in Your Area</p>
+            <div class="donation-2" id="camps-div">
+                
+            </div>
+
+        </div>
+    </div>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2>Ask Gemini</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi there 👋<br>How can I help you today ?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+
+<script src="js/chatbot-script.js" defer></script>
+<script src="js/user-profile.js"></script>
+</body>
+</html>
+
+<!-- 
+{
+    "message": "User details retrieved successfully",
+    "data": {
+        "details": {
+            "_id": "65d258797c2a9af0f3e89996",
+            "userName": "John Doe",
+            "bloodGroup": "O+",
+            "gender": "male",
+            "dob": "1990-01-01T00:00:00.000Z",
+            "email": "john@example.com",
+            "location": {
+                "type": "Point",
+                "coordinates": [],
+                "country": "United States",
+                "state": "New York",
+                "postalCode": "10000",
+                "_id": "65d258797c2a9af0f3e89997"
+            },
+            "lastdonation": "2023-12-25T00:00:00.000Z",
+            "donations": [
+                {
+                    "campId": "65d2709544488101701d2f93",
+                    "requestStatus": 1,
+                    "_id": "65d27932b546b626a5721d71"
+                }
+            ],
+            "volunteerExperience": [
+                {
+                    "campId": "65d2709544488101701d2f93",
+                    "requestStatus": 1,
+                    "_id": "65d27910b546b626a5721d67"
+                }
+            ],
+            "requests": [
+                {
+                    "requestId": "65d26cb675a85846d96ba76a",
+                    "requestStatus": 1,
+                    "_id": "65d26cb775a85846d96ba76d"
+                }
+            ],
+            "readyToDonate": [],
+            "createdAt": "2024-02-18T19:20:25.456Z",
+            "updatedAt": "2024-02-19T04:40:05.131Z",
+            "__v": 3
+        }
+    },
+    "statuscode": 200,
+    "success": true
+}
+ -->
