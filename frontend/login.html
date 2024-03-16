@@ -99,7 +99,7 @@
                     <input type="tel" id="phno" placeholder="Enter Your Phone Number" required>
                     <br>
                     <input type="password" id="password" placeholder="Enter Your Password" required>
-                    <a href="user-profile.html"><button type="button" class="button">Sign In</button></a>
+                    <button type="button" class="button" id="signin">Sign In</button>
                     <br><br>
                     <a href=""><p>Forgot password?</p></a>  
                     <br>
@@ -113,6 +113,49 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("signin").addEventListener("click", async (event) => {
+                try {
+                    const phoneNumber = document.getElementById("phno").value;
+                    const password = document.getElementById("password").value;
+    
+                    const response = await fetch("https://api.bluebeads.shivamkrthakur.in/v1/normal/login", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            phone_num: phoneNumber,
+                            password: password
+                        })
+                    });
+                    const responseData = await response.json();
+                    console.log(responseData);
+                    if (responseData.statuscode===200) {
+                        document.cookie = `accessToken=${responseData.data.accessToken}; path=/; secure; HttpOnly`;
+                        document.cookie = `refreshToken=${responseData.data.refreshToken}; path=/; secure; HttpOnly`;
+
+                        console.log(responseData.userType);
+                        if (responseData.data.userType === "user") {
+                            window.location.href = "user-profile.html";
+                        } else if (responseData.data.userType === "ngo") {
+                            window.location.href = "ngo-profile.html";
+                        } else {
+                            console.log("Unknown User !!!");
+                        }
+
+                    } else {
+                        console.log("Login Failed");
+                    }
+                } catch (error) {
+                    console.error("An error occurred:", error);
+                }
+            });
+        });
+    </script>
+    
 
 </body>
 
