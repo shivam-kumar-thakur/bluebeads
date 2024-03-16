@@ -1,7 +1,13 @@
 # BlueBeads : *Transforming Drops into Oceans of Hope*
+## [Click Here](https://api.bluebeads.shivamkrthakur.in/login.html) to join BlueBeads and save one life, one donation at a time!  
+## [Click Here](https://youtu.be/99P1bkjyJ6E?si=2c3mT8y5bk4Gg5j7) to check out BlueBeads' Demo!
+
 ****
+
 ## Content
 - [BlueBeads : *Transforming Drops into Oceans of Hope*](#bluebeads--transforming-drops-into-oceans-of-hope)
+  - [Click Here to join BlueBeads and save one life, one donation at a time!](#click-here-to-join-bluebeads-and-save-one-life-one-donation-at-a-time)
+  - [Click Here to check out BlueBeads' Demo!](#click-here-to-check-out-bluebeads-demo)
   - [Content](#content)
   - [1. Abstract](#1-abstract)
   - [2. Problem Statement](#2-problem-statement)
@@ -12,19 +18,25 @@
     - [*3.4. Navigation*](#34-navigation)
   - [4.  Future Scope](#4--future-scope)
   - [5. Meet The Team](#5-meet-the-team)
+
 ****
+
 ## 1. Abstract
 
 BlueBeads is a revolutionary platform aimed at connecting blood donors and NGO camps, providing a seamless solution to address emergency blood requirements. This proposal is submitted for the Google Solution Challenge 2024, focusing on Sustainable Development Goals (SDGs) 3 (Good Health and Well-being), 10 (Reduced Inequalities), 17 (Partnerships for the Goals), 9 (Industry, Innovation, and Infrastructure), and 11 (Sustainable Cities and Communities).
 
 [Click Here](https://youtu.be/99P1bkjyJ6E?si=2c3mT8y5bk4Gg5j7) to check out BlueBeads' Demo!
+
 ****
+
 ## 2. Problem Statement
 
 In 2022, it was reported that India needs 15 million units of blood each year but manages to collect only 11 million units. Despite this, India wastes about 6.5 lakh units of blood and blood components each year due to lack of facilities, resulting in an alarming death count of 12,000 per year.[(Business Insider: INDIA)](https://www.businessinsider.in/science/health/news/nearly-12000-individuals-die-every-day-due-to-lack-of-quality-blood/articleshow/92196089.cms) 
 
 The existing systems often lack efficiency in connecting potential donors with those in need, leading to critical delays and sometimes irreversible consequences. This underscores the urgent need for a robust, technologically advanced platform to bridge the gap between donors and those seeking blood during emergencies.
+
 ****
+
 ## 3. BlueBeads
 
 BlueBeads is currently a web-based platform that leverages Machine Learning technology to streamline the blood donation process. It acts as a centralized hub for blood donors and NGO camps, providing a real-time and geographically targeted system to match donors with emergencies. The platform utilizes a user-friendly interface and employs advanced algorithms to ensure swift and efficient responses.
@@ -102,13 +114,17 @@ BlueBeads is currently a web-based platform that leverages Machine Learning tech
    - After a successful blood donation, both donors and NGO camps can provide feedback and express gratitude. BlueBeads acknowledges and recognizes donors for their contributions, fostering a sense of community and camaraderie.
 
 In summary, navigating through BlueBeads is designed to be intuitive and user-friendly, facilitating efficient communication and coordination between donors and NGO camps. The future integration of a mobile application will further enhance accessibility and responsiveness, ensuring that help is just a tap away.
+
 ****
+
 ## 4.  Future Scope
 
 To enhance accessibility and reach a wider audience, BlueBeads plans to develop a mobile application. The BlueBeads app will bring the life-saving features to users' pockets, allowing for quicker response times and increased participation in blood donation initiatives.
 
 In conclusion, BlueBeads is a transformative solution addressing critical gaps in emergency blood donation. This proposal seeks Google's support to develop and implement this platform, contributing significantly to achieving multiple SDGs and saving lives around the world.
+
 ****
+
 ## 5. Meet The Team
 - [Shivam Kumar Thakur](https://github.com/shivam-kumar-thakur)
 - [Joshua S Raju](https://github.com/JoshuaR26)
