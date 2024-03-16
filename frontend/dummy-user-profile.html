@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/icon.png">
+
+      <!-- ? POPPINS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/button-2.css">
+    <link rel="stylesheet" href="css/button-1.css">
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="stylesheet" href="css/user-profile.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+ <!-- Chat bot gemmini -->
+ <!-- Include Bootstrap CSS -->
+ <link rel="stylesheet" href="css/chatbot-style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="images/bluebeads_logo3.png" height="50px">
+                <h1>Bluebeads</h1>
+            </div>
+            <div class="menu-nav">
+                <div class="menu-container"> 
+                    <div class="spacer-curve-1"></div>
+                    <div class="back-container-curve">
+                        <div class="content-curve">
+                            <p><a href="user-profile.html"><i class="fas fa-user menu-icon-select-colour"></i> <span> Profile</span></a></p>
+                        </div>
+                    </div>
+                    <div class="spacer-curve-2"></div>
+                </div>
+    
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href="find_donor.html"><i class="fas fa-droplet"></i> <span> Request</span></a></p>
+                    </div>
+                </div>
+    
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href="find_ngo.html"><i class="fas fa-people-roof"></i> <span> NGO</span></a></p>
+                    </div>
+                </div>
+    
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href="find_ngo.html"><i class="fas fa-campground"></i> <span> Camp</span></a></p>
+                    </div>
+                </div>
+
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href=""><i class="fas fa-home"></i> <span> About Us</span></a></p>
+                    </div>
+                </div>
+
+                <div class="menu-container"> 
+                    <div class="content-nav">
+                        <p><a href="feedback.html"><i class="fas fa-comments"></i> <span> Feedback</span></a></p>
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main container -->
+    <div class="container-1">
+        <!-- Left sidebar -->
+        <div class="sidebar">
+            <!-- User card -->
+            <div class="card-1">
+                <img src="images/shivam.jpg" alt="User Image">
+                <div class="name">Shivam Kumar THAKUR</div>
+            </div>
+            <!-- Primary details -->
+            <div class="primary-details">
+                <!-- User Details -->
+                <!-- <p>User Details</p> -->
+                    <p><span class="head-font-2">BLOOD GROUP:</span> O+</p>
+                    <p><span class="head-font-2">GENDER:</span> Male</p>
+                    <p><span class="head-font-2">Date of Birth:</span> 18-12-2003</p>
+                    <p><span class="head-font-2">EMAIL:</span> shivam1213@gmail.com</p>
+                    <p><span class="head-font-2">LOCATION:</span> Chennai, Tamil Nadu, INDIA 600127</p>
+                    <p><span class="head-font-2">LAST DONATION:</span> 12-10-2023</p>
+            </div>
+        </div>
+
+        <!-- Right content -->
+        <div class="content">
+            <!-- Request donation section -->
+            <p class="hello">Hello There, <span>Shivam Kumar THAKUR</span>!</p>
+            <p>
+                <i>Each One of Us is a Drop in an Ocean of Hope.</i>
+            </p>
+            <div class="donation donation-primary">
+                <div class="card request-donation primiary-card-info">
+                    <p class="head-font">Find Donor</p>
+                    <hr>
+                    <!-- <br> -->
+                    <p>We are here to help YOU!<br>Find your Donor with A.I. help !</p>
+                    <button class="button-2 btn-pur" onclick="location.href = 'find_donor.html';">Find</button>
+                </div>
+
+                <div class="card request-donation primiary-card-info">
+                    <p class="head-font">Current Request</p>
+                    <hr>
+                    <!-- <p>No requests.</p> -->
+                    <!-- Request Details -->
+
+                    <p><span class="head-font-2">Blood Group Needed:</span>O+</p>
+                    <p><span class="head-font-2">LOCATION:</span> Chennai, Tamil Nadu, INDIA 600127</p>
+                    <p><span class="head-font-2">Request Status:</span> Open</p>
+                     
+                </div>
+
+                <div class="card request-donation primiary-card-info">
+                    <p class="head-font">Previous History</p>
+                    <hr>
+                    <p>View your previous history of requests.</p>
+                    <button class="button-1 btn-or">View</button>
+                </div>
+
+            </div>
+            <hr>
+            <p class="hello">Public Welfare</p>
+            <div class="donation">
+                <div class="card request-donation">
+                    <p class="head-font">Donations Done</p>
+                    <hr>
+                    <p >Make your first donation. 1 donation = 4 life.</p>
+                    <img class="public-welfare-images" src="images/donate-it.jpg" alt="No Data Found" height="200px" >
+                    <button class="button-1 btn-or" onclick="location.href = 'find_ngo.html';">Donate</button>
+                </div>
+                <div class="card request-donation">
+                    <p class="head-font">Volunteer Experience</p>
+                    <hr>
+                    <p >Be a volunteer for the donation camp. Find nearby camps.</p>
+                    <center>
+
+                        <img class="public-welfare-images" src="images/find-for-volunteer.jpg" alt="No Data Found" height="200px" width="360px">
+                    </center>
+                    <button class="button-1 btn-or" onclick="location.href = 'find_ngo.html';">Find</button>
+                </div>
+
+            </div>
+            <hr>
+            <p class="hello">Blood Banks in User's State</p>
+            <div class="donation">
+                <div class="card request-donation">
+                    <!-- Blood Banks in User's State -->
+                    <p><span class="head-font-2">NAME:</span>Athma Blood Centre (ABC) - Blood Bank</p>
+                    <p><span class="head-font-2">LOCATION:</span> Chennai, Tamil Nadu, INDIA 600044</p>
+                    <p><span class="head-font-2">CONTACT:</span> 095661 54918</p>
+                </div>
+                <div class="card request-donation">
+                    <!-- Blood Banks in User's State -->
+                    <p><span class="head-font-2">NAME:</span>MIOT Hospitals Blood Bank</p>
+                    <p><span class="head-font-2">LOCATION:</span> Chennai, Tamil Nadu, INDIA 600089</p>
+                    <p><span class="head-font-2">CONTACT:</span>044 2249 2288</p>
+                </div>
+                <div class="card request-donation">
+                    <!-- Blood Banks in User's State -->
+                    <p><span class="head-font-2">NAME:</span>ANNAI TERESA BLOOD BANK</p>
+                    <p><span class="head-font-2">LOCATION:</span> Chennai, Tamil Nadu, INDIA 600091</p>
+                    <p><span class="head-font-2">CONTACT:</span>044 2258 0803</p>
+                </div>
+            </div>
+            <hr>
+            <p class="hello">Camps in Your Area</p>
+            <div class="donation-2">
+                <div class="card request-donation">
+                    <!-- camps in user area -->
+                        <p><span class="head-font-2">Camp NAME:</span>Athma Blood Centre (ABC) - Blood Bank</p>
+                        <p><span class="head-font-2">NGO:</span>Athma Blood Centre (ABC) - Blood Bank  </p>
+                        <p><span class="head-font-2">Description:</span>We ensure adequate supply of safe and quality blood / blood products such as - Whole Blood - Packed Red Cells Concentrate (PRBC) - Fresh Frozen Plasma (FFP) - Cryoprecipitate ( Cryo) - Platelet Concentrate (RDP) - Single Donor Platelet (SDP) - Leuco depleted Platelet - Leuco depleted Red Cells - Irradiated processing charges - Red Cells in SAGM to all needy patients at all times, by motivating volunteers to donate blood, and organizing, conducting voluntary blood donation camps in nearby areas.</p>
+                        <p><span class="head-font-2">LOCATION:</span> Chennai, Tamil Nadu, INDIA 600044</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2>Ask Gemini</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi there 👋<br>How can I help you today ?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+
+<script src="js/chatbot-script.js" defer></script>
+</body>
+</html>
